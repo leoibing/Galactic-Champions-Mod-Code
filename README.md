@@ -65,11 +65,10 @@ In all texts-.xml:
 Open Adobe Flash Player or Ruffle and select game.swf, then play
 
 
-<img width="3841" height="2071" alt="Galactic-Champions-Mod-Code (0)" src="https://github.com/user-attachments/assets/696cb93b-e3ab-42f2-b24e-71bb3c698415" />
+<img width="3841" height="2071" alt="Galactic-Champions-Mod-Code (0)" src="https://github.com/user-attachments/assets/d401d5cb-8f51-4aef-90bc-ba4af2059c2d" />
 
-<img width="3839" height="2065" alt="Galactic-Champions-Mod-Code (1)" src="https://github.com/user-attachments/assets/40d90837-170f-4159-96db-c426cc56e9f1" />
+<img width="3839" height="2065" alt="Galactic-Champions-Mod-Code (1)" src="https://github.com/user-attachments/assets/6d07714e-523d-4234-ada0-7f58ff22cdd1" />
 
-<img width="1702" height="909" alt="Galactic-Champions-Mod-Code (2)" src="https://github.com/user-attachments/assets/ba8fa665-82a3-46a4-bd6f-72fa3312d349" />
+<img width="1702" height="909" alt="Galactic-Champions-Mod-Code (2)" src="https://github.com/user-attachments/assets/9f0f9c49-164c-46c0-b6c1-c437f5becbec" />
 
-<img width="1508" height="912" alt="Galactic-Champions-Mod-Code (3)" src="https://github.com/user-attachments/assets/b23efd40-bc23-47fa-9b6c-b394aff646af" />
-
+<img width="1508" height="912" alt="Galactic-Champions-Mod-Code (3)" src="https://github.com/user-attachments/assets/636b1e46-81a0-499b-b85d-b931969baccc" />
