@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<texts>
+
+	<!--  GENERAL  -->
+	<term key="ContextMenuItems">Purple Tree Studio</term>	<!--  Item de menu contextual customizado (para que no haya menu customizado, borrar esta linea)  -->
+	<term key="frame_label_default">esp</term>
+	<term key="game_title"><![CDATA[<P>CAMPEONES</P><P>GALÁCTICOS</P>]]></term>
+
+	<!--  CHEAT CODES  -->
+	<term key="codes-alien-Transylian">0,truco</term>
+	<term key="codes-item-Heal_3-10">1,trato</term>
+	<term key="codes-item-Courage_3-10">2,coraje</term>
+	<term key="codes-item-Hardness_3-10">3,dureza</term>
+	<term key="codes-item-Adrenalin_3-10">4,adrenalina</term>
+	<term key="codes-item-Recharge_3-10">5,recarga</term>
+	<term key="codes-item-Purify-10">6,purificar</term>
+	<term key="codes-item-Elixir-10">7,elixir</term>
+	<term key="codes-item-Switch-10">8,cambio</term>
+	<term key="codes-item-Revive-10">9,reanima</term>
+	<term key="codes-gold-500">10,oro</term>
+	<term key="codes-xp-2500">11,xp</term>
+
+	<!--  SPLASH  -->
+	<term key="code">CÓDIGO</term>
+	<term key="input_code">INGRESA TU CÓDIGO</term>
+
+	<!-- POPULAR TEXTS -->
+	<term key="strength">FUERZA</term>
+	<term key="defense">DEFENSA</term>
+	<term key="agility">AGILIDAD</term>
+	<term key="levelLabel">LVL</term>
+	<term key="xpLabel">EXP</term>
+	<term key="retry">VUELVE A IR</term>
+	<term key="gotomap">IR AL MAPA</term>
+	<term key="accept">AcceptAr</term>
+	<term key="cancel">CAncelAr</term>
+	<term key="loading">CARGANDO..</term>
+
+	<!--  BATTLE LOST  -->
+	<term key="gameLostTitle">PERDISTE</term>
+	<term key="gameLostDescriptionQuickBattle">INTÉNTALO DENUEVO!</term>
+	<term key="gameLostDescriptionTournament">ESTÁS FUERA DEL DESAFÍO</term>
+
+	<!--  BATTLE WON  -->
+	<term key="gameWonTitle">GANASTE</term>
+	<term key="gameWonDescription">Obtuviste Experiencia</term>
+	<term key="gameWonLevelUp">Mejora!</term>
+
+	<!--  BUY CONFIRMATION  -->
+	<term key="buyConfirmationTitleTrainining">ENTRENAR</term>
+	<term key="buyConfirmationTitleShop">COMPRAR</term>
+
+	<!--  FIRST ALIEN SELECTION -->
+	<term key="firstAlienSelectionTitle"><![CDATA[<P>SELECCIONAR</P><P>ALIEN</P>]]></term>
+	<term key="firstAlienSelectionDescription">Elije a un alien para tu aventura</term>
+
+	<!--  FIRST ALIEN CONFIRMATION  -->
+	<term key="firstAlienConfirmationTitle">TUS ELECCIONES</term>
+
+	<!--  MAP  -->
+	<term key="mapAreaTraining">ENTRENAR</term>
+	<term key="mapAreaShop">TIENDA</term>
+	<term key="mapAreaTournament">TORNEO</term>
+	<term key="mapAreaQuickBattle">COMBATE RÁPIDO</term>
+
+	<!--  MAP REWARD -->
+	<term key="mapRewardTitle">RECOMPENSA</term>
+
+	<!--  NEW GAME WARNING -->
+	<term key="newGameTitle">ATENCIÓN</term>
+	<term key="newGameDescription"><![CDATA[<P>SE BORRARÁ TU AVANCE ACTUAL</P><P>¿DESEAS CONTINUAR?</P>]]></term>
+
+	<!--  NO GOLD WARNING -->
+	<term key="noGoldTitle">NECESITAS MÁS TAYDEN</term>
+	<term key="noGoldDescription"><![CDATA[<P>GANA PELEAS Y TORNEOS PARA</P><P>GANAR MÁS TAYDEN</P>]]></term>
+
+	<!--  SHOP SCREEN -->
+	<term key="shopTitle">TIENDA</term>
+	<term key="shopItemsTitle">COMPRA</term>
+	<term key="shopInventoryTitle">INVENTARIO</term>
+	<term key="Heal_1ShopDescription">RESTAURA SALUD</term>
+	<term key="Heal_2ShopDescription">RESTAURA SALUD</term>
+	<term key="Heal_3ShopDescription">RESTAURA SALUD</term>
+	<term key="Courage_1ShopDescription">AUMENTA FUERZA</term>
+	<term key="Courage_2ShopDescription">AUMENTA LA FUERZA</term>
+	<term key="Courage_3ShopDescription">AUMENTA LA FUERZA</term>
+	<term key="Hardness_1ShopDescription">REFORZA DEFENSA</term>
+	<term key="Hardness_2ShopDescription">REFORZA LA DEFENSA</term>
+	<term key="Hardness_3ShopDescription">REFORZA LA DEFENSA</term>
+	<term key="Adrenalin_1ShopDescription">INCREMENTA AGILIDAD</term>
+	<term key="Adrenalin_2ShopDescription">INCREMENTA LA AGILIDAD</term>
+	<term key="Adrenalin_3ShopDescription">INCREMENTA LA AGILIDAD</term>
+	<term key="Recharge_1ShopDescription">RECUPERA ENERGÍA</term>
+	<term key="Recharge_2ShopDescription">RECUPERA ENERGÍA</term>
+	<term key="Recharge_3ShopDescription">RECUPERA ENERGÍA</term>
+	<term key="ElixirShopDescription">RENOVA ENERGÍA Y SALUD</term>
+	<term key="PurifyShopDescription">REMUEVE LOS EFECTOS NEGATIVOS</term>
+	<term key="SwitchShopDescription">ÚSALO PARA CAMBIAR DE ALIENS</term>
+	<term key="ReviveShopDescription">REVIVE UN ALIEN CAÍDO</term>
+
+	<!--  TEAM SCREEN -->
+	<term key="teamScreenTitle">ARMA TU EQUIPO</term>
+
+	<!--  TOURNAMENT CARDS SCREEN -->
+	<term key="cardsScreenTitle">TARJETAS DE HÉROES</term>
+
+	<!--  TRAINING SCREEN -->
+	<term key="trainingDescription">Entrena a tu alien para ser el mejor</term>
+	<term key="trainingTrainstat">ENTRENAMIENTO</term>
+
+	<!--  FIXTURE SCREEN -->
+	<term key="fixturePlayer">JUGADOR</term>
+	<term key="fixtureTournamentWon"><![CDATA[<P>¡GANADOR!</P>]]></term>
+
+	<!--  TOURNAMENT SELECTION SCREEN -->
+	<term key="tournamentSubtitle">Completa todo el torneo</term>
+	<term key="tournamentWon">¡GANASTE!</term>
+	<term key="tournamentRequirement">REQUERIMIENTO</term>
+	<term key="tournamentRequirements">REQUISITOS</term>
+	<term key="tournamentReward">GRATIFICACIÓN</term>
+	<term key="tournamentRewards">PREMIOS</term>
+
+	<!--  WATCH SELECTION SCREEN -->
+	<term key="watchSelectionTitle1">RELOJ</term>
+	<term key="watchSelectionTitle2">DE HÉROE</term>
+	<term key="watchSelectionSubtitle">Selecciona tu brazalete para la partida</term>
+
+	<!--  MAIN MENU  -->
+	<term key="splashNewGame">NUEVO JUEGO</term>
+	<term key="splashContinue">CONTINUAR</term>
+
+	<!--  HUD  -->
+	<term key="HUDPause">PAusA</term>
+
+	<!--  EXIT POPUP  -->
+	<term key="exit_text">ESTÁS SEGURO DE QUE QUIERES ABANDONAR LA PELEA?</term>
+	<term key="exit_no">No</term>
+	<term key="exit_yes">SÍ</term>
+
+	<!--  VERSUS SCREEN  -->
+	<term key="versusFight">BATALLA</term>
+	<term key="versusQuickFight">LUCHA RÁPIDA</term>
+
+	<!--  BATTLE HUD  -->
+	<term key="SkillsDisplayerAttackLabel">GOLPE</term>
+	<term key="SkillsDisplayerDefenseLabel">APOYO</term>
+	<term key="CriticalHit">GOLPE CRÍTICO!</term>
+	<term key="MissHit">ESQUIVADO!</term>
+
+	<term key="AliensMenuTitle">SELECCIONA TU ALIEN</term>
+	<term key="AliensMenuTitleDefeat">SELECCIONA TU PRÓXIMO ALIEN</term>
+
+	<term key="ActionsMenuAttack">ATAQUE</term>
+	<term key="ActionsMenuDefense">DEFENSA</term>
+	<term key="ActionsMenuItem">ITEM</term>
+
+	<term key="SwapButtonsTitle">ALIENS</term>
+
+	<!--  ALIENS NAMES  -->
+	<term key="InsectoidName">INSECTOID</term>
+	<term key="NosedeenianName">NOSEDEENIAN</term>
+	<term key="TetramandName">TETRAMAND</term>
+	<term key="PyroniteName">PYRONITA</term>
+	<term key="KinceleranName">KinecelerAn</term>
+	<term key="MethanosianName">MethAnosiAno</term>
+	<term key="PelarotaAlburianoName">PelArotA ArburiAno</term>
+	<term key="AppoplexianName">AppoplexiAn</term>
+	<term key="TalpaedanName">TAlpAedan</term>
+	<term key="OrishanName">OrishAn</term>
+	<term key="VaxasaurianoName">VAXASAURIANO</term>
+	<term key="GeocheloneAerioName">Geochelone Aerio</term>
+	<term key="AracnochimpanceName">ARACNOCHIMPANCÉ</term>
+	<term key="NecrofriggianoName">NECROFRIGGIANO</term>
+	<term key="GourmandName">GOURMAND</term>
+	<term key="ConductoidName">CONDUCTOID</term>
+	<term key="GimlinopithecusName">Gimlinopithecus</term>
+	<term key="AerofibioName">Aerofibio</term>
+	<term key="SegmentasapienName">SegmentAsApien</term>
+	<term key="TerradinoName">PturbosAuriAno</term>
+	<term key="GalileanName">GAlileAn</term>
+	<term key="EctonuriteName">Ectonurite</term>
+	<term key="LoboanName">LoboAn</term>
+	<term key="ThepKhufanName">Thep KhufAn</term>
+	<term key="TransylianName">TRANSYLIAN</term>
+	<term key="SplixsonName">SPLIXSON</term>
+
+	<!--  SKILLS NAMES  -->
+
+	<!-- Insectoid -->
+	<term key="InsectoidAttack1">ARAÑAZO</term>
+	<term key="InsectoidAttack2">BOLA DE PLASMA</term>
+	<term key="InsectoidAttack3">GARRAS VENENOSAS</term>
+
+	<term key="InsectoidDefense1">BLOQUE</term>
+	<term key="InsectoidDefense2">ESCUDO PLÁSTICO</term>
+
+	<!-- Nosedeenian -->
+	<term key="NosedeenianAttack1">PUÑETAZO</term>
+	<term key="NosedeenianAttack2">RAYO ELÉCTRICO</term>
+	<term key="NosedeenianAttack3">PUÑO SÓNICO</term>
+
+	<term key="NosedeenianDefense1">BLOQUEAR</term>
+	<term key="NosedeenianDefense2">REGENERACIÓN</term>
+
+	<!-- Tetramand -->
+	<term key="TetramandAttack1">PONCHE</term>
+	<term key="TetramandAttack2">PUÑO MÚLTIPLE</term>
+	<term key="TetramandAttack3">CONGELAR</term>
+	<term key="TetramandAttack4">ATAQUE FINAL</term>
+
+	<term key="TetramandDefense1">BLOQUEO</term>
+	<term key="TetramandDefense2">FURIA</term>
+	<term key="TetramandDefense3">CUBRIR</term>
+	
+	<!-- Pyronite -->
+	<term key="PyroniteAttack1">GOLPEAR</term>
+	<term key="PyroniteAttack2">PELOTA DE FUEGO</term>
+	<term key="PyroniteAttack3">SURF ARDIENTE</term>
+	<term key="PyroniteAttack4">CICLÓN DE FUEGO</term>
+
+	<term key="PyroniteDefense1">CUADRA</term>
+	<term key="PyroniteDefense2">ADRENALINA</term>
+	<term key="PyroniteDefense3">MURO DE FLAMAS</term>
+
+	<!-- Vaxasauriano -->
+	<term key="VaxasaurianoAttack1">GOLPEAR</term>
+	<term key="VaxasaurianoAttack2">ONDA DE CHOQUE</term>
+	<term key="VaxasaurianoAttack3">TERREMOTO</term>
+	<term key="VaxasaurianoAttack4">FUERZA AUMENTADA</term>
+
+	<term key="VaxasaurianoDefense1">BLOQUE</term>
+	<term key="VaxasaurianoDefense2">RUGIR</term>
+	<term key="VaxasaurianoDefense3">CRECIMIENTO</term>
+
+	<!-- Aracnochimpance -->
+	<term key="AracnochimpanceAttack1">PUÑETAZO</term>
+	<term key="AracnochimpanceAttack2">TELARAÑA</term>
+	<term key="AracnochimpanceAttack3">PUÑOS DE ACERO</term>
+
+	<term key="AracnochimpanceDefense1">BLOQUEAR</term>
+	<term key="AracnochimpanceDefense2">ROPA DE SEDA</term>
+	<term key="AracnochimpanceDefense3">GRITO DE GUERRA</term>
+
+	<!-- Necrofriggiano -->
+	<term key="NecrofriggianoAttack1">PONCHE</term>
+	<term key="NecrofriggianoAttack2">ARRANQUE</term>
+	<term key="NecrofriggianoAttack3">SUSPIRO HELADO</term>
+	<term key="NecrofriggianoAttack4">FLAMAS HELADAS</term>
+
+	<term key="NecrofriggianoDefense1">BLOQUEO</term>
+	<term key="NecrofriggianoDefense2">IMPULSO</term>
+	<term key="NecrofriggianoDefense3">INVISIBILIDAD</term>
+	<term key="NecrofriggianoDefense4">PARED DE HIELO</term>
+
+	<!-- Gourmand -->
+	<term key="GourmandAttack1">PUÑETAZO</term>
+	<term key="GourmandAttack2">LAMER</term>
+	<term key="GourmandAttack3">CONSUMO</term>
+	<term key="GourmandAttack4">ALIENTO EXPLOSIVO</term>
+
+	<term key="GourmandDefense1">BLOQUEAR</term>
+	<term key="GourmandDefense2">DIGESTION</term>
+	<term key="GourmandDefense3">RECUPERAR</term>
+
+	<!-- Conductoid -->
+	<term key="ConductoidAttack1">PONCHE</term>
+	<term key="ConductoidAttack2">ABSORCIÓN</term>
+	<term key="ConductoidAttack3">DESCARGA ELÉCTRICA</term>
+	<term key="ConductoidAttack4">LANZAR ENERGÍA</term>
+
+	<term key="ConductoidDefense1">BLOQUEO</term>
+	<term key="ConductoidDefense2">RECARGAR</term>
+	<term key="ConductoidDefense3">MANTA ELÉCTRICA</term>
+
+	<!-- Transylian -->
+	<term key="TransylianAttack1">GOLPEAR</term>
+	<term key="TransylianAttack2">PUÑO ELÉCTRICO</term>
+	<term key="TransylianAttack3">TECNOQUINESIS</term>
+
+	<term key="TransylianDefense1">BLOQUE</term>
+	<term key="TransylianDefense2">FUROR</term>
+	<term key="TransylianDefense3">MAGNETISMO</term>
+
+	<!-- Splixson -->
+	<term key="SplixsonAttack1">ARAÑAR</term>
+	<term key="SplixsonAttack2">CLONACIÓN</term>
+	<term key="SplixsonAttack3">GOLPE DE CORRIENTE</term>
+
+	<term key="SplixsonDefense1">CUADRA</term>
+	<term key="SplixsonDefense2">ACCELERACIÓN</term>
+
+	<!--  EFFECTS NAMES  -->
+	<term key="Effect_Heal">RECUPERAR</term>
+	<term key="Effect_Poison">VENENO</term>
+	<term key="Effect_HP_regeneration">REGENERAR</term>
+	<term key="Effect_Purify">PURIFICADO</term>
+	<term key="Effect_Recharge">RECARGA</term>
+	<term key="Effect_Trapped">ATRAPADO</term>
+	<term key="Effect_Burn">QUEMADO</term>
+	<term key="Effect_Taunt">PULLA</term>
+	<term key="Effect_Drain">DRENADO</term>
+	<term key="Effect_Paralyze">PARALISADO</term>
+	<term key="Effect_Wipe">LIMPIO</term>
+
+	<!--  ITEM NAMES  -->
+	<term key="Item_Heal_1_Name">ZALAMERO SIMPLE</term>
+	<term key="Item_Heal_2_Name">SMOOTH ESPECIAL</term>
+	<term key="Item_Heal_3_Name">SMOOTHIE DE ORO</term>
+
+	<term key="Item_Courage_1_Name">VIGOR TIRANÓPIDO</term>
+	<term key="Item_Courage_2_Name">PODER SLAMWORM</term>
+	<term key="Item_Courage_3_Name">FUERZA CRABDOZER</term>
+
+	<term key="Item_Hardness_1_Name">CORAZA COMÚN</term>
+	<term key="Item_Hardness_2_Name">ARMADURA PLATEADA</term>
+	<term key="Item_Hardness_3_Name">PROTO-TECNO DORADO</term>
+
+	<term key="Item_Adrenalin_1_Name">RAPIDEZ TERRORÁNTULA</term>
+	<term key="Item_Adrenalin_2_Name">PRESTEZA BUGLIZARD</term>
+	<term key="Item_Adrenalin_3_Name">AGUILIDAD PANUNCIAN</term>
+
+	<term key="Item_Recharge_1_Name">CORRODIUM SOLO</term>
+	<term key="Item_Recharge_2_Name">ELEMENTO X DOBLE</term>
+	<term key="Item_Recharge_3_Name">SUB-ENERGÍA TRIPLE</term>
+
+	<term key="Item_Purify_Name">OGIA ÁMBAR</term>
+
+	<term key="Item_Elixir_Name">ELIXIR MILAGROSO</term>
+
+	<term key="Item_Invulnerability_Name">InvulnerABilidAd</term>
+
+	<term key="Item_Bonusxp_Name">MÁs EXP</term>
+	<term key="Item_Bonusgold_Name">MÁs TAyden</term>
+
+	<term key="Item_SwitchE_Name">Proto-CAmiÓn</term>
+	<term key="Item_Switch_Name">OMNITRIX</term>
+
+	<term key="Item_Revive_Name">FLOR DE ENERGÍA</term>
+	<term key="Item_Doubleaction_Name">TecnologÍA GAlvAn</term>
+
+	<!--  TOURNAMENT NAMES  -->
+	<term key="Tournament1_Name">CONCURSO PEPTOS XI</term>
+	<term key="Tournament2_Name">COMPETICIÓN ARACNA</term>
+	<term key="Tournament3_Name">CRUZADA ANUR TRANSYL</term>
+	<term key="Tournament4_Name">PRUEBA METHANOS</term>
+	<term key="Tournament5_Name">DISPUTA MIKD'LTY</term>
+	<term key="Tournament6_Name">TORNEO TERMINUS III</term>
+	<term key="Tournament7_Name">PELEJA ANODYNE</term>
+	<term key="Tournament8_Name">DESAFÍO VILGAXIA</term>
+
+	<!--  WATCHES NAMES  -->
+	<term key="Watch1Name">Rojo Maligno</term>
+	<term key="Watch2Name">Púrpura Maligno</term>
+	<term key="Watch3Name">Amarillo Maligno</term>
+	<term key="Watch4Name">Azul Maligno</term>
+
+	<term key="Watch5Name">Rojo</term>
+	<term key="Watch6Name">Púrpura</term>
+	<term key="Watch7Name">Amarillo</term>
+	<term key="Watch8Name">Azul</term>
+
+	<!--  CARDS NAMES  -->
+	<term key="Card1Name">GOURMAND</term>
+	<term key="Card2Name">ARACNOCHIMPANCÉ</term>
+	<term key="Card3Name">TRANSYLIAN</term>
+	<term key="Card4Name">PYRONITA</term>
+
+	<term key="Card5Name">NECROFRIGGIANO</term>
+	<term key="Card6Name">TETRAMAND</term>
+	<term key="Card7Name">CONDUCTOID</term>
+	<term key="Card8Name">VAXASAURIANO</term>
+
+	<!-- TUTORIAL TEXTS -->
+	<term key="TutorialStepIntroText">¡BIENVENIDO A CAMPEONES GALÁCTICOS!</term>
+	<term key="TutorialStepWatchText">ELIJE TU DISPOSITIVO ALIENÍGENA</term>
+	<term key="TutorialStepAlienText">BUENA ELECCIÓN, SELECCIONA A TU PRIMER ALIEN </term>
+	<term key="TutorialStepFightText">¡YA ESTÁS LISTO PARA ENFRENTARTE A TU PRIMER OPONENTE!</term>
+	<term key="TutorialStepTrainingText">ENTRENA A TU ALIENÍGENA PARA HACERLO MÁS FUERTE</term>
+	<term key="TutorialStepTournamentText">PELEA EN TU PRIMER CONCURSO!</term>
+	<term key="TutorialStepCongratulationsText">¡FELICITACIONES, GANASTE TU PRIMER COMPETICIÓN!</term>
+	<term key="TutorialStepCongratulations2Text">ESTAS LISTO PARA CONTINUAR TU AVENTURA</term>
+
+</texts>

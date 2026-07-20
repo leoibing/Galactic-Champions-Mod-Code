@@ -1,0 +1,2701 @@
+{
+    "general": 
+	{
+        "volume": 1,
+        "lang": "por",
+        "name-por": "o nome",
+        "name-esp": "el nombre",
+        "name-eng": "the name",
+		"critical_multiplier": 1.55,
+        "critical_base_damage": 2,
+		"critical_base_chance":0.1,
+		"critical_max_chance":0.3,
+		"evasion_base_chance": 0.05,
+		"evasion_max_chance":1,
+		"stat_training_cost":25,		
+		"starting_gold":100,		
+		"starting_items":["Heal_1","Heal_1"],		
+		"starting_xp":0	
+    },
+	"firstAliensForSelection":
+	{
+		"ids":["Insectoid","Nosedeenian","Splixson"]		
+	},
+	"alienStats":
+	{
+		"baseHP":30,"deltaHP":8,
+		"baseMP":30,"deltaMP":7,		
+		"baseSTR":22,"deltaSTR":5,"trainingDeltaSTR":4,		
+		"baseDEF":22,"deltaDEF":5,"trainingDeltaDEF":4,		
+		"baseAGL":22,"deltaAGL":5,"trainingDeltaAGL":4
+	},	
+	"test":
+	{
+		"player1aliens":
+		[			
+			{"alien":"Pyronite","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"PelarotaAlburiano","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Insectoid","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Nosedeenian","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Splixson","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"GeocheloneAerio","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Gourmand","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Ectonurite","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Aracnochimpance","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Talpaedan","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Tetramand","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Conductoid","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Appoplexian","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Kinceleran","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Gimlinopithecus","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Segmentasapien","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Terradino","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Transylian","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Vaxasauriano","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Methanosian","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Orishan","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"ThepKhufan","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Necrofriggiano","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Aerofibio","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Loboan","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Galilean","alienxp":30000,"trainedstr":0,"traineddef":0,"trainedag":0}
+			
+		],		
+		"player1alienschosen":["ThepKhufan","Pyronite"],
+		"player2aliens":
+		[
+			{"alien":"Insectoid","alienlevel":20,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Appoplexian","alienlevel":20,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Aracnochimpance","alienlevel":20,"trainedstr":0,"traineddef":0,"trainedag":0},
+			{"alien":"Tetramand","alienlevel":20,"trainedstr":0,"traineddef":0,"trainedag":0}
+		],
+		"player1items":
+		[   
+		    {"item":"Courage_1"},
+			{"item":"Courage_2"},
+			{"item":"Courage_3"},
+			{"item":"Switch"},
+		    {"item":"Doubleaction"},
+	        {"item":"Heal_1"},					
+            {"item":"Heal_2"},
+			{"item":"Heal_3"},
+			{"item":"Hardness_1"},
+			{"item":"Hardness_2"},
+			{"item":"Hardness_3"},
+			{"item":"Adrenalin_1"},    
+            {"item":"Adrenalin_2"},    
+            {"item":"Adrenalin_3"},  
+			{"item":"Purify"},
+			{"item":"Elixir"},
+			{"item":"Recharge_1"},
+			{"item":"Revive"},
+			{"item":"Recharge_2"},
+			{"item":"Recharge_3"}  
+			
+			
+		],
+		"player2items":
+		[
+			{"item":"Heal_1"}
+			
+		]		
+	},	
+    "aliens":
+    [
+        {
+            "id": "Insectoid",
+			"ratios":{"hp":70,"mp":57,"str":60,"def":70,"ag":60,"mv":8,"xv":45,"creationchance":15,"alienlevelreq":1},
+			"hitsoundinfo":{"soundid":"Insectoiddaño","volume":0.4},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power":7.4,"mpcost":0,
+					"soundinfo":[{"soundid":"InsectoidAttack1","volume":0.45}],
+				    
+					"effects":
+					[
+						
+					]
+				},
+			
+				{
+					"id":"Attack2","type":1,"level":1,"power": 10,"mpcost":12,					
+					"soundinfo":[{"soundid":"InsectoidAttack2","volume":0.45}],
+					"effects":
+					[
+						{"id": "Blind","power":10,"chance":35,"minturns":2,"maxturns":4}					
+					]
+				},
+				
+					{
+					"id":"Attack3","type":1,"level":5,"power":12,"mpcost":20,					
+					"soundinfo":[{"soundid":"InsectoidAttack1","volume":0.45}],
+					"effects":
+					[
+						{"id": "Poison","power":10,"chance":35,"minturns":2,"maxturns":4}								
+					]
+				},
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 30,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":3,"power": 35,"mpcost":12,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Hardness","power":15,"chance":100,"minturns":2,"maxturns":2}													
+					]
+				}
+				
+				
+            ]
+        },           
+		{
+            "id": "Nosedeenian",
+			"ratios":{"hp":66,"mp":60,"str":70,"def":60,"ag":60,"mv":8,"xv":45,"creationchance":15,"alienlevelreq":1},
+			"hitsoundinfo":{"soundid":"Nodaño","volume":0.4},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power":7.4,"mpcost":0,
+					"soundinfo":[{"soundid":"NosedeenianAttack1","volume":0.45}],
+					"effects":
+					[
+						
+					]
+				},
+				
+				{
+					"id":"Attack2","type":1,"level":1,"power":10,"mpcost":12,					
+					"soundinfo":[{"soundid":"NosedeenianAttack2","volume":0.45}],
+					"effects":
+					[
+						{"id": "Weakening","power":8,"chance":50,"minturns":1,"maxturns":2}								
+					]
+				},
+				
+				
+				
+				{
+					"id":"Attack3","type":1,"level":3,"power":12.8,"mpcost":20,					
+					"soundinfo":[{"soundid":"NosedeenianAttack1","volume":0.45}],
+					"effects":
+					[
+						{"id": "Weakening","power":10,"chance":25,"minturns":1,"maxturns":2}								
+					]
+				},
+				
+				
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 30,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				 {
+					"id":"Defense2","type":2,"level":5,"power": 40,"mpcost":12,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+					{"id": "HP_regeneration","power":10,"chance":100,"minturns":2,"maxturns":3}
+                        											
+                       						  
+					]
+				}			
+            ]
+        },		
+		{
+            "id": "Splixson",
+			"ratios":{"hp":65,"mp":60,"str":60,"def":60,"ag":70,"mv":8,"xv":45,"creationchance":15,"alienlevelreq":1},
+			"hitsoundinfo":{"soundid":"Splixdaño","volume":0.4},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.4,"mpcost":0,					
+					"soundinfo":[{"soundid":"splixsionarañazo","volume":0.45}],
+					"effects":
+					[
+						
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":1,"power": 10,"mpcost":12,					
+					"soundinfo":[{"soundid":"splixsonclonacion","volume":0.45}],
+					"effects":
+					[
+						{"id": "Brake","power":10,"chance":25,"minturns":1,"maxturns":3}								
+					]
+				},
+				{
+					"id":"Attack3","type":1,"level":5,"power": 12.5,"mpcost":20,					
+					"soundinfo":[{"soundid":"splixsionarañazo","volume":0.45}],
+					"effects":
+					[
+						{"id": "Trapped","power":100,"chance":70,"minturns":1,"maxturns":3}								
+					]
+				},
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 35,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":3,"power": 40,"mpcost":12,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Adrenalin","power":15,"chance":100,"minturns":1,"maxturns":3}													
+					]
+				}
+              			
+            ]
+        },		
+		{
+            "id": "Pyronite",
+			"ratios":{"hp":60,"mp":56,"str":75,"def":70,"ag":80,"mv":10,"xv":70,"creationchance":15,"alienlevelreq":9},
+			"hitsoundinfo":{"soundid":"pirodaño","volume":0.45},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.2,"mpcost":0,					
+					"soundinfo":[{"soundid":"Piro1","volume":0.45}],
+					"effects":
+					[
+						
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":3,"power": 9.2,"mpcost":16,					
+					"soundinfo":[{"soundid":"Piro2","volume":0.45}],
+					"effects":
+					[
+						{"id": "Burn","power":15,"chance":25,"minturns":3,"maxturns":4}								
+					]
+				},
+				{
+					"id":"Attack3","type":1,"level":10,"power": 11.4,"mpcost":25,					
+					"soundinfo":[{"soundid":"Piro1","volume":0.45}],
+					"effects":
+					[
+						{"id": "Weakening","power":20,"chance":50,"minturns":2,"maxturns":3}								
+					]
+				},
+				
+				{
+					"id":"Attack4","type":1,"level":13,"power": 12.8,"mpcost":40,					
+					"soundinfo":[{"soundid":"Piro2","volume":0.45}],
+					"effects":
+					[
+						{"id": "Burn","power":15,"chance":100,"minturns":2,"maxturns":3},	
+                        {"id": "Paralyze","power":15,"chance":30,"minturns":1,"maxturns":2}						
+					]
+				},
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 35,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":5,"power": 45,"mpcost":12,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Adrenalin","power":15,"chance":100,"minturns":1,"maxturns":3}													
+					]
+				},		
+
+                {
+					"id":"Defense3","type":2,"level":11,"power": 45,"mpcost":27,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						
+						{"id": "Hardness","power":20,"chance":100,"minturns":1,"maxturns":3},
+                        {"id": "Heal","power":25,"chance":100,"minturns":1,"maxturns":3}						
+					]
+				}					
+            ]
+        },	
+
+       {
+            "id": "GeocheloneAerio",
+			"ratios":{"hp":100,"mp":51,"str":60,"def":100,"ag":30,"mv":16,"xv":65,"creationchance":15,"alienlevelreq":17000000000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power":7.5,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":7,"power": 11.4,"mpcost":12,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Brake","power":10,"chance":25,"minturns":1,"maxturns":3},
+                        {"id": "Wipe","power":10,"chance":25,"minturns":1,"maxturns":3}						
+					]
+				},
+				{
+					"id":"Attack3","type":1,"level":9,"power": 14,"mpcost":28,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Trapped","power":40,"chance":50,"minturns":2,"maxturns":3},
+                        {"id": "Drain","power":30,"chance":100,"minturns":1,"maxturns":1}							
+					]
+				},
+			
+				
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 55,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":30,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":5,"power":55,"mpcost":15,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Hardness","power":10,"chance":100,"minturns":2,"maxturns":4}				
+					]
+				},		
+
+               {
+					"id":"Defense3","type":2,"level":10,"power": 55,"mpcost":23,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						
+                        {"id": "HP_regeneration","power":20,"chance":100,"minturns":2,"maxturns":4}						
+					]
+				},		
+                {
+					"id":"Defense4","type":2,"level":18,"power": 70,"mpcost":38,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Hardness","power":15,"chance":100,"minturns":1,"maxturns":3},
+                        {"id": "Heal","power":50,"chance":100,"minturns":1,"maxturns":1}	
+						
+					]
+				}					
+            ]
+        },	
+
+		{
+            "id": "Ectonurite",
+			"ratios":{"hp":71,"mp":70,"str":63,"def":65,"ag":72,"mv":16,"xv":60,"creationchance":15,"alienlevelreq":1000000000000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.8,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":5,"power": 10.4,"mpcost":17,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					  {"id": "Poison","power":12,"chance":35,"minturns":2,"maxturns":3},	
+                      {"id": "Wipe","power":100,"chance":30,"minturns":1,"maxturns":1}							  
+					]
+				},
+				{
+					"id":"Attack3","type":1,"level":10,"power": 12.5,"mpcost":23,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Drain","power":25,"chance":50,"minturns":1,"maxturns":1}								
+					]
+				},
+			    {
+					"id":"Attack4","type":1,"level":15,"power": 15,"mpcost":36,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Paralyze","power":40,"chance":30,"minturns":1,"maxturns":3},
+                        {"id": "Poison","power":12,"chance":100,"minturns":2,"maxturns":4}						
+					]
+				},
+				
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 30,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":45,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":7,"power":30,"mpcost":14,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "HP_regeneration","power":20,"chance":100,"minturns":2,"maxturns":3}			
+					]
+				},		
+
+               {
+					"id":"Defense3","type":2,"level":12,"power":35,"mpcost":27,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Adrenalin","power":15,"chance":100,"minturns":1,"maxturns":1},	
+                        {"id": "Courage","power":15,"chance":100,"minturns":1,"maxturns":1}
+                        						
+					]
+				}		
+                					
+            ]
+        },
+        {
+            "id": "Aracnochimpance",
+			"ratios":{"hp":70,"mp":55,"str":71,"def":65,"ag":80,"mv":10,"xv":65,"creationchance":20,"alienlevelreq":5}, 
+			"hitsoundinfo":{"soundid":"Spiderdaño","volume":0.4},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power":7.8,"mpcost":0,					
+					"soundinfo":[{"soundid":"Spider1","volume":0.45}],
+					"effects":
+					[
+					
+                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":4,"power": 11.5,"mpcost":13,					
+					"soundinfo":[{"soundid":"Spider2","volume":0.45}],
+					"effects":
+					[
+						{"id": "Brake","power":15,"chance":40,"minturns":1,"maxturns":1}
+                        						
+					]
+				},
+			    
+				{
+					"id":"Attack3","type":1,"level":6,"power": 15,"mpcost":25,					
+					"soundinfo":[{"soundid":"Spider1","volume":0.45}],
+					"effects":
+					[
+						{"id": "Taunt","power":20,"chance":30,"minturns":1,"maxturns":1},
+                        {"id": "Wipe","power":20,"chance":100,"minturns":1,"maxturns":1}						
+					]
+				},
+			   
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 30,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":30,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				
+					
+				{
+					"id":"Defense2","type":2,"level":5,"power":45,"mpcost":17,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Hardness","power":25,"chance":100,"minturns":1,"maxturns":2}													
+					]
+				},
+
+                {
+					"id":"Defense3","type":2,"level":9,"power": 30,"mpcost":23,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "Adrenalin","power":20,"chance":100,"minturns":1,"maxturns":1},
+                      {"id": "Courage","power":20,"chance":100,"minturns":1,"maxturns":1}					  
+					]
+				}				
+
+              
+                					
+            ]
+        },	
+       {
+            "id": "Talpaedan",
+			"ratios":{"hp":85,"mp":48,"str":85,"def":68,"ag":55,"mv":16,"xv":65,"creationchance":10,"alienlevelreq":1800000000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power":7.3,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":5,"power": 10,"mpcost":15,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					  
+                     							  
+					]
+				},
+				
+				{
+					"id":"Attack3","type":1,"level":12,"power": 12,"mpcost":23,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 {"id": "Blind","power":15,"chance":35,"minturns":1,"maxturns":3} 
+                     							  
+					]
+				},
+				{
+					"id":"Attack4","type":1,"level":18,"power": 15,"mpcost":37,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Trapped","power":100,"chance":100,"minturns":1,"maxturns":3}
+                     					
+					]
+				},
+			    
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 30,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":7,"power": 35,"mpcost":13,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 {"id": "Courage","power":15,"chance":100,"minturns":1,"maxturns":3} 	
+					]
+				},
+
+				{
+					"id":"Defense3","type":2,"level":10,"power": 35,"mpcost":20,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 {"id": "Hardness","power":20,"chance":100,"minturns":1,"maxturns":3} 	
+					]
+				}
+
+              
+                					
+            ]
+        },	
+
+        {
+            "id": "Gourmand",
+			"ratios":{"hp":60,"mp":60,"str":65,"def":65,"ag":65,"mv":8,"xv":45,"creationchance":20,"alienlevelreq":3}, 
+			"hitsoundinfo":{"soundid":"Goudaño","volume":0.4},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.5,"mpcost":0,					
+					"soundinfo":[{"soundid":"GourAttack1","volume":0.45}],
+					"effects":
+					[
+					
+					]
+				},
+				
+				   {
+					"id":"Attack2","type":1,"level":1,"power": 9,"mpcost":12,					
+					"soundinfo":[{"soundid":"GourAttack2","volume":0.45}],
+					"effects":
+					[
+					
+					  {"id": "Brake","power":25,"chance":45,"minturns":1,"maxturns":3}	                   						 
+					]
+				},
+				{
+					"id":"Attack3","type":1,"level":5,"power": 11,"mpcost":21,					
+					"soundinfo":[{"soundid":"GourAttack1","volume":0.45}],
+					"effects":
+					[
+					
+					{"id": "Drain","power":35,"chance":100,"minturns":1,"maxturns":3}   
+                     							  
+					]
+				},
+				
+				{
+					"id":"Attack4","type":1,"level":9,"power": 13.5,"mpcost":33,					
+					"soundinfo":[{"soundid":"GourAttack2","volume":0.45}],
+					"effects":
+					[
+					 {"id": "Weakening","power":30,"chance":50,"minturns":1,"maxturns":1}, 
+                     {"id": "Blind","power":30,"chance":50,"minturns":1,"maxturns":3}							  
+					]
+				},
+				
+			    
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 35,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":40,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":3,"power": 35,"mpcost":14,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 {"id": "Adrenalin","power":10,"chance":100,"minturns":1,"maxturns":3},
+                     {"id": "Hardness","power":10,"chance":100,"minturns":1,"maxturns":3},
+                     {"id": "Courage","power":10,"chance":100,"minturns":1,"maxturns":3}					 
+					]
+				},
+				
+				{
+					"id":"Defense3","type":2,"level":7,"power": 40,"mpcost":30,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Heal","power":30,"chance":100,"minturns":1,"maxturns":1},
+                        {"id": "HP_regeneration","power":10,"chance":100,"minturns":2,"maxturns":3}						
+					]
+				}
+
+              
+                					
+            ]
+        },	
+
+  {
+            "id": "Tetramand",
+			"ratios":{"hp":85,"mp":65,"str":90,"def":80,"ag":60,"mv":15,"xv":90,"creationchance":12,"alienlevelreq":14}, 
+			"hitsoundinfo":{"soundid":"Tetrallora","volume":0.4},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 8,"mpcost":0,					
+					"soundinfo":[{"soundid":"Tetra1","volume":0.45}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":5,"power": 10.5,"mpcost":20,					
+					"soundinfo":[{"soundid":"Tetra1","volume":0.45}],
+					"effects":
+					[
+					 {"id": "Weakening","power":10,"chance":25,"minturns":1,"maxturns":2} 					  
+                     							  
+					]
+				},
+				
+				{
+					"id":"Attack3","type":1,"level":15,"power": 12.5,"mpcost":30,					
+					"soundinfo":[{"soundid":"Tetra2","volume":0.45}],
+					"effects":
+					[
+					 {"id": "Brake","power":20,"chance":45,"minturns":1,"maxturns":2} 
+                     							  
+					]
+				},
+				
+			    {
+					"id":"Attack4","type":1,"level":17,"power": 14,"mpcost":45,					
+					"soundinfo":[{"soundid":"Tetra2","volume":0.45}],
+					"effects":
+					[
+					 
+					  {"id": "Trapped","power":25,"chance":45,"minturns":1,"maxturns":3},
+					  {"id": "Brake","power":15,"chance":40,"minturns":1,"maxturns":2},
+                      {"id": "Weakening","power":15,"chance":40,"minturns":1,"maxturns":2},
+                      {"id": "Blind","power":15,"chance":40,"minturns":1,"maxturns":2}  					  
+                     							  
+					]
+				},
+				
+				
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 35,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					  {"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}	
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":8,"power": 35,"mpcost":17,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 {"id": "Courage","power":15,"chance":100,"minturns":1,"maxturns":3} 	
+					]
+				},
+
+				{
+					"id":"Defense3","type":2,"level":16,"power": 45,"mpcost":28,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 {"id": "Hardness","power":25,"chance":100,"minturns":1,"maxturns":3},
+					 {"id": "Purify","power":25,"chance":100,"minturns":1,"maxturns":3}
+					]
+				}
+              
+                					
+            ]
+        },	
+
+        {
+            "id": "PelarotaAlburiano",
+			"ratios":{"hp":90,"mp":40,"str":58,"def":90,"ag":63,"mv":16,"xv":90,"creationchance":15,"alienlevelreq":20000000000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.8,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":3,"power": 10,"mpcost":10,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					{"id": "Blind","power":12,"chance":30,"minturns":1,"maxturns":3} 					  
+                     							  
+					]
+				},
+				
+				{
+					"id":"Attack3","type":1,"level":9,"power": 14,"mpcost":23,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                     {"id": "Brake","power":10,"chance":40,"minturns":2,"maxturns":4},
+                     {"id": "Blind","power":10,"chance":40,"minturns":2,"maxturns":4},		
+                     {"id": "Weakening","power":10,"chance":40,"minturns":2,"maxturns":4}					 
+					]
+				},
+				
+			    
+				
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 45,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":5,"power": 45,"mpcost":14,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "Hardness","power":10,"chance":100,"minturns":2,"maxturns":4}					  
+					]
+				},
+                {
+					"id":"Defense3","type":2,"level":12,"power": 55,"mpcost":25,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					  {"id": "HP_regeneration","power":20,"chance":100,"minturns":2,"maxturns":5},
+                      {"id": "Purify","power":100,"chance":100,"minturns":1,"maxturns":1}					  
+					]
+				},
+                {
+					"id":"Defense4","type":2,"level":18,"power": 60,"mpcost":33,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					  {"id": "Heal","power":50,"chance":100,"minturns":1,"maxturns":1},
+					  {"id": "Hardness","power":25,"chance":100,"minturns":1,"maxturns":1} 	
+					]
+				}
+                					
+            ]
+        },	
+
+        {
+            "id": "Conductoid",
+			"ratios":{"hp":80,"mp":70,"str":80,"def":70,"ag":80,"mv":15,"xv":90,"creationchance":12,"alienlevelreq":16}, 
+			"hitsoundinfo":{"soundid":"Feedllora","volume":0.4},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 8,"mpcost":0,					
+					"soundinfo":[{"soundid":"Feed1","volume":0.45}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":5,"power": 9.2,"mpcost":16,					
+					"soundinfo":[{"soundid":"Feed1","volume":0.45}],
+					"effects":
+					[
+					
+					{"id": "Drain","power":20,"chance":100,"minturns":1,"maxturns":3},					  
+                    {"id": "Wipe","power":20,"chance":30,"minturns":1,"maxturns":3} 							  
+					]
+				},
+				
+				{
+					"id":"Attack3","type":1,"level":18,"power": 11.5,"mpcost":27,					
+					"soundinfo":[{"soundid":"Feed2","volume":0.45}],
+					"effects":
+					[
+					 
+                     {"id": "Blind","power":15,"chance":50,"minturns":2,"maxturns":4},
+                     {"id": "Burn","power":10,"chance":20,"minturns":1,"maxturns":3}					 
+					]
+				},
+				
+				{
+					"id":"Attack4","type":1,"level":19,"power": 19,"mpcost":39,					
+					"soundinfo":[{"soundid":"Feed2","volume":0.45}],
+					"effects":
+					[
+					 
+                     {"id": "Drain","power":35,"chance":100,"minturns":1,"maxturns":3},
+					 {"id": "Paralyze","power":20,"chance":15,"minturns":1,"maxturns":2}
+					]
+				},
+			    
+				
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 35,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":8,"power": 35,"mpcost":24,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "Adrenalin","power":15,"chance":100,"minturns":1,"maxturns":3},
+                      {"id": "Purify","power":100,"chance":100,"minturns":1,"maxturns":1}						  
+					]
+				},
+               
+			   {
+					"id":"Defense3","type":2,"level":19,"power": 40,"mpcost":40,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					     {"id": "Heal","power":20,"chance":100,"minturns":1,"maxturns":1},
+						{"id": "Courage","power":20,"chance":100,"minturns":1,"maxturns":1},
+						{"id": "Hardness","power":20,"chance":100,"minturns":1,"maxturns":1},
+						{"id": "HP_regeneration","power":8,"chance":100,"minturns":1,"maxturns":1}
+					]
+				}
+                
+                					
+            ]
+        },	
+		
+		  
+		
+	   {
+            "id": "Appoplexian",
+			"ratios":{"hp":70,"mp":46,"str":80,"def":60,"ag":85,"mv":16,"xv":65,"creationchance":15,"alienlevelreq":1700000000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.8,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":5,"power": 11.4,"mpcost":17,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					{"id": "Blind","power":10,"chance":35,"minturns":1,"maxturns":3} 					  
+                     							  
+					]
+				},
+				
+				{
+					"id":"Attack3","type":1,"level":10,"power": 14.5,"mpcost":24,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                    {"id": "Weakening","power":18,"chance":60,"minturns":1,"maxturns":3} 								  
+					]
+				},					
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 35,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":30,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":7,"power": 35,"mpcost":15,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "Courage","power":15,"chance":100,"minturns":1,"maxturns":1}					  
+					]
+				},
+               
+			   {
+					"id":"Defense3","type":2,"level":12,"power": 35,"mpcost":23,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "Adrenalin","power":20,"chance":100,"minturns":1,"maxturns":1}						  
+					]
+				}
+                
+                					
+            ]
+        },	
+		
+		 {
+            "id": "Kinceleran",
+			"ratios":{"hp":50,"mp":50,"str":50,"def":65,"ag":100,"mv":16,"xv":65,"creationchance":15,"alienlevelreq":6000000000000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 8.1,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":5,"power": 11.7,"mpcost":14,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					{"id": "Brake","power":10,"chance":30,"minturns":1,"maxturns":3} 					  
+                     							  
+					]
+				},
+				
+				{
+					"id":"Attack3","type":1,"level":8,"power": 13.2,"mpcost":19,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                    {"id": "Weakening","power":12,"chance":35,"minturns":1,"maxturns":3} 								  
+					]
+				},
+				
+				{
+					"id":"Attack4","type":1,"level":10,"power": 16,"mpcost":32,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                    {"id": "Brake","power":15,"chance":100,"minturns":1,"maxturns":3},
+                    {"id": "Paralyze","power":15,"chance":30,"minturns":1,"maxturns":2}					
+					]
+				},
+			    
+				
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 30,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":6,"power": 30,"mpcost":13,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "Adrenalin","power":10,"chance":100,"minturns":1,"maxturns":1}						  
+					]
+				},
+               
+			   {
+					"id":"Defense3","type":2,"level":8,"power": 30,"mpcost":27,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "HP_regeneration","power":30,"chance":100,"minturns":2,"maxturns":5},
+                      {"id": "Purify","power":100,"chance":100,"minturns":1,"maxturns":1}						  
+					]
+				}
+                
+                					
+            ]
+        },	
+		
+		 {
+            "id": "Gimlinopithecus",
+			"ratios":{"hp":73,"mp":40,"str":84,"def":84,"ag":73,"mv":8,"xv":45,"creationchance":15,"alienlevelreq":2600000000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.5,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":5,"power": 10.2,"mpcost":9,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					  {"id": "Blind","power":10,"chance":20,"minturns":1,"maxturns":3} 						  
+                     							  
+					]
+				},
+				
+				{
+					"id":"Attack3","type":1,"level":13,"power": 12.4,"mpcost":15,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                    {"id": "Weakening","power":15,"chance":35,"minturns":1,"maxturns":3} 								  
+					]
+				},
+				
+				{
+					"id":"Attack4","type":1,"level":18,"power": 15,"mpcost":27,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					  {"id": "Weakening","power":20,"chance":50,"minturns":1,"maxturns":2},
+                    {"id": "Taunt","power":100,"chance":35,"minturns":1,"maxturns":2}
+                   				
+					]
+				},			
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 35,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":1,"power": 35,"mpcost":14,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "Hardness","power":10,"chance":100,"minturns":1,"maxturns":1}						  
+					]
+				},
+               
+			   {
+					"id":"Defense3","type":2,"level":11,"power": 35,"mpcost":21,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                       {"id": "Courage","power":15,"chance":100,"minturns":2,"maxturns":3}						  
+					]
+				},
+				
+				{
+					"id":"Defense4","type":2,"level":20,"power": 40,"mpcost":32,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+					 {"id": "Heal","power":20,"chance":100,"minturns":1,"maxturns":1},
+                      {"id": "Adrenalin","power":15,"chance":100,"minturns":1,"maxturns":3},
+                      {"id": "Purify","power":100,"chance":100,"minturns":1,"maxturns":1}
+                       						  
+					]
+				}               					
+            ]
+        },	
+		
+		 {
+            "id": "Segmentasapien",
+			"ratios":{"hp":82,"mp":47,"str":60,"def":65,"ag":61,"mv":16,"xv":65,"creationchance":15,"alienlevelreq":1300000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 8,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":6,"power": 12.5,"mpcost":11,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+						{"id": "Brake","power":10,"chance":35,"minturns":2,"maxturns":4}				  
+                     							  
+					]
+				},
+				
+			
+				
+				{
+					"id":"Attack3","type":1,"level":12,"power": 16,"mpcost":27,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                    {"id": "Blind","power":15,"chance":40,"minturns":2,"maxturns":4},
+					{"id": "Brake","power":15,"chance":40,"minturns":2,"maxturns":4}
+                   				
+					]
+				},
+			    
+				
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 35,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":4,"power": 35,"mpcost":12,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "Hardness","power":15,"chance":100,"minturns":1,"maxturns":1}						  
+					]
+				},
+               
+			   {
+					"id":"Defense3","type":2,"level":15,"power": 40,"mpcost":18,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+					{"id": "HP_regeneration","power":20,"chance":100,"minturns":2,"maxturns":4}
+                        											
+                       						  
+					]
+				},
+			   
+			   
+			   {
+					"id":"Defense4","type":2,"level":19,"power": 40,"mpcost":29,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        {"id": "Hardness","power":25,"chance":100,"minturns":1,"maxturns":1},
+                        {"id": "Heal","power":30,"chance":100,"minturns":1,"maxturns":1}						
+					]
+				}
+				
+				
+                
+                					
+            ]
+        },	
+		
+		{
+            "id": "Terradino",
+			"ratios":{"hp":67,"mp":61,"str":77,"def":63,"ag":73,"mv":16,"xv":65,"creationchance":15,"alienlevelreq":320000000000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.5,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":7,"power": 12,"mpcost":16,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					 {"id": "Blind","power":20,"chance":45,"minturns":2,"maxturns":4}					  
+                     							  
+					]
+				},
+					
+				{
+					"id":"Attack3","type":1,"level":15,"power": 15,"mpcost":29,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                    {"id": "Wipe","power":10,"chance":100,"minturns":1,"maxturns":2},
+					{"id": "Taunt","power":10,"chance":50,"minturns":1,"maxturns":2}
+                   				
+					]
+				},			
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 35,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":7,"power": 35,"mpcost":12,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "Adrenalin","power":15,"chance":100,"minturns":1,"maxturns":1}						  
+					]
+				},              			   
+			   
+				{
+					"id":"Defense3","type":2,"level":17,"power": 35,"mpcost":20,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        {"id": "Courage","power":20,"chance":100,"minturns":1,"maxturns":1}
+                        						
+					]
+				}               					
+            ]
+        },	
+		
+			{
+            "id": "Transylian",
+			"ratios":{"hp":86,"mp":50,"str":85,"def":80,"ag":40,"mv":10,"xv":70,"creationchance":10,"alienlevelreq":6}, 
+			"hitsoundinfo":{"soundid":"Frankillora","volume":0.4},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.7,"mpcost":0,					
+					"soundinfo":[{"soundid":"Frank1","volume":0.45}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":1,"power": 10,"mpcost":15,					
+					"soundinfo":[{"soundid":"Frank1","volume":0.45}],
+					"effects":
+					[
+					
+					 {"id": "Weakening","power":10,"chance":25,"minturns":2,"maxturns":4},
+                     {"id": "Wipe","power":10,"chance":100,"minturns":2,"maxturns":4},	
+                   	 {"id": "Poison","power":8,"chance":20,"minturns":1,"maxturns":3}					 
+                     							  
+					]
+				},		
+				
+				{
+					"id":"Attack3","type":1,"level":10,"power": 13.5,"mpcost":30,					
+					"soundinfo":[{"soundid":"Frank2","volume":0.45}],
+					"effects":
+					[
+					 
+                    {"id": "Taunt","power":15,"chance":25,"minturns":1,"maxturns":3}			
+					]
+				},			
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 35,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":6,"power": 35,"mpcost":14,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "Courage","power":20,"chance":100,"minturns":1,"maxturns":1}						  
+					]
+				},               			   
+			   
+				{
+					"id":"Defense3","type":2,"level":12,"power": 40,"mpcost":30,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        {"id": "Purify","power":15,"chance":100,"minturns":1,"maxturns":1},
+						{"id": "Heal","power":25,"chance":100,"minturns":1,"maxturns":1}
+                        						
+					]
+				}					
+            ]
+        },
+		
+			{
+            "id": "Vaxasauriano",
+			"ratios":{"hp":100,"mp":75,"str":100,"def":90,"ag":75,"mv":20,"xv":90,"creationchance":15,"alienlevelreq":19}, 
+			"hitsoundinfo":{"soundid":"dañovax","volume":0.4},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.8,"mpcost":0,					
+					"soundinfo":[{"soundid":"vax1","volume":0.45}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":5,"power": 10,"mpcost":15,					
+					"soundinfo":[{"soundid":"vax1","volume":0.45}],
+					"effects":
+					[
+					
+					 {"id": "Weakening","power":10,"chance":30,"minturns":2,"maxturns":4}					  
+                     							  
+					]
+				},				
+				{
+					"id":"Attack3","type":1,"level":18,"power": 12.5,"mpcost":27,					
+					"soundinfo":[{"soundid":"vax2","volume":0.45}],
+					"effects":
+					[
+					 
+                   {"id": "Blind","power":15,"chance":35,"minturns":2,"maxturns":4}
+                   				
+					]
+				},				
+				{
+					"id":"Attack4","type":1,"level":20,"power": 15,"mpcost":40,					
+					"soundinfo":[{"soundid":"vax2","volume":0.45}],
+					"effects":
+					[
+					 
+                   {"id": "Paralyze","power":100,"chance":100,"minturns":1,"maxturns":2},
+				    {"id": "Weakening","power":20,"chance":45,"minturns":2,"maxturns":4},
+                    {"id": "Blind","power":20,"chance":45,"minturns":2,"maxturns":4},
+                     {"id": "Brake","power":20,"chance":45,"minturns":2,"maxturns":4}					
+                   				
+					]
+				},			
+                {
+					"id":"Defense1","type":2,"level":1,"power": 35,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":7,"power": 35,"mpcost":17,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "Courage","power":15,"chance":100,"minturns":1,"maxturns":1},
+                      {"id": "Purify","power":100,"chance":100,"minturns":1,"maxturns":1}					  
+					]
+				},
+				{
+					"id":"Defense3","type":2,"level":18,"power": 40,"mpcost":40,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        {"id": "Courage","power":20,"chance":100,"minturns":1,"maxturns":1},
+						{"id": "Hardness","power":20,"chance":100,"minturns":1,"maxturns":1},
+						{"id": "Adrenalin","power":20,"chance":100,"minturns":1,"maxturns":1}
+                        						
+					]
+				}					
+            ]
+        },
+		
+		
+			{
+            "id": "Methanosian",
+			"ratios":{"hp":77,"mp":68,"str":79,"def":75,"ag":81,"mv":25,"xv":45,"creationchance":15,"alienlevelreq":3500000000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.8,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":5,"power": 10.2,"mpcost":18,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					 {"id": "Burn","power":15,"chance":35,"minturns":2,"maxturns":4}					  
+                     							  
+					]
+				},
+				{
+					"id":"Attack3","type":1,"level":9,"power": 13.4,"mpcost":27,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                   {"id": "Blind","power":10,"chance":45,"minturns":2,"maxturns":4},
+				   {"id": "Burn","power":10,"chance":35,"minturns":2,"maxturns":4}	
+                   				
+					]
+				},
+				
+				{
+					"id":"Attack4","type":1,"level":15,"power": 16,"mpcost":40,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                   {"id": "Trapped","power":100,"chance":100,"minturns":1,"maxturns":3},
+				    {"id": "Burn","power":15,"chance":100,"minturns":2,"maxturns":4}
+                    					
+                   				
+					]
+				},
+                {
+					"id":"Defense1","type":2,"level":1,"power": 30,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":40,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				 {
+					"id":"Defense2","type":2,"level":3,"power": 30,"mpcost":18,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        {"id": "HP_regeneration","power":20,"chance":100,"minturns":2,"maxturns":4}
+                        						
+					]
+				},
+				{
+					"id":"Defense3","type":2,"level":13,"power": 30,"mpcost":27,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "Hardness","power":15,"chance":100,"minturns":1,"maxturns":1},
+                      {"id": "Heal","power":30,"chance":100,"minturns":1,"maxturns":1}					  
+					]
+				}	
+            ]
+        },
+		
+		{
+            "id": "Orishan",
+			"ratios":{"hp":71,"mp":52,"str":74,"def":64,"ag":80,"mv":15,"xv":65,"creationchance":15,"alienlevelreq":150000000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power":7.8,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":5,"power": 12.2,"mpcost":13,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					 {"id": "Weakening","power":10,"chance":45,"minturns":2,"maxturns":4}					  
+                     							  
+					]
+				},
+				
+			
+				
+				{
+					"id":"Attack3","type":1,"level":10,"power": 15,"mpcost":30,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                   {"id": "Taunt","power":10,"chance":50,"minturns":1,"maxturns":2},
+				   {"id": "Weakening","power":15,"chance":60,"minturns":2,"maxturns":4},
+				    {"id": "Brake","power":15,"chance":60,"minturns":2,"maxturns":4}
+                   				
+					]
+				},
+				
+				
+			    
+				
+				
+                {
+					"id":"Defense1","type":2,"level":1,"power": 25,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				{
+					"id":"Defense2","type":2,"level":3,"power": 30,"mpcost":13,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "Hardness","power":10,"chance":100,"minturns":1,"maxturns":1}
+                      					  
+					]
+				},
+                			   
+			   
+			   {
+					"id":"Defense3","type":2,"level":7,"power": 30,"mpcost":27,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        {"id": "Courage","power":15,"chance":100,"minturns":1,"maxturns":1},
+						{"id": "Adrenalin","power":10,"chance":100,"minturns":1,"maxturns":1}
+                        						
+					]
+				}
+				
+				
+                
+                					
+            ]
+        },
+		
+		{
+            "id": "ThepKhufan",
+			"ratios":{"hp":75,"mp":46,"str":65,"def":50,"ag":79,"mv":8,"xv":45,"creationchance":15,"alienlevelreq":800000000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.8,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":3,"power": 10.7,"mpcost":10,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					{"id": "Brake","power":10,"chance":50,"minturns":2,"maxturns":4}				  
+                     							  
+					]
+				},
+				
+			
+				
+				{
+					"id":"Attack3","type":1,"level":6,"power": 13.5,"mpcost":20,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                   
+				    {"id": "Trapped","power":10,"chance":30,"minturns":1,"maxturns":3},
+					{"id": "Brake","power":15,"chance":50,"minturns":2,"maxturns":4}
+                   				
+					]
+				},
+                {
+					"id":"Defense1","type":2,"level":1,"power": 30,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				
+				{
+					"id":"Defense2","type":2,"level":3,"power": 35,"mpcost":12,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                      {"id": "Hardness","power":10,"chance":100,"minturns":1,"maxturns":1}
+                      					  
+					]
+				},
+			    {
+					"id":"Defense3","type":2,"level":8,"power": 35,"mpcost":17,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        {"id": "HP_regeneration","power":20,"chance":100,"minturns":2,"maxturns":4}
+                        						
+					]
+				}			
+            ]
+        },
+		
+		
+		{
+            "id": "Necrofriggiano",
+			"ratios":{"hp":87,"mp":56,"str":87,"def":73,"ag":77,"mv":15,"xv":90,"creationchance":12,"alienlevelreq":14}, 
+			"hitsoundinfo":{"soundid":"Necrodaño","volume":0.4},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 8,"mpcost":0,					
+					"soundinfo":[{"soundid":"Necro1","volume":0.45}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},				
+				{
+					"id":"Attack2","type":1,"level":5,"power": 10,"mpcost":13,					
+					"soundinfo":[{"soundid":"Necro1","volume":0.45}],
+					"effects":
+					[
+					
+					  {"id": "Blind","power":10,"chance":30,"minturns":1,"maxturns":3} 						  
+                     							  
+					]
+				},
+				{
+					"id":"Attack3","type":1,"level":14,"power": 12,"mpcost":24,					
+					"soundinfo":[{"soundid":"Necro2","volume":0.45}],
+					"effects":
+					[
+					
+					{"id": "Brake","power":15,"chance":45,"minturns":2,"maxturns":4}			  
+                     							  
+					]
+				},
+				{
+					"id":"Attack4","type":1,"level":16,"power": 14,"mpcost":35,					
+					"soundinfo":[{"soundid":"Necro2","volume":0.45}],
+					"effects":
+					[
+					 
+                   
+				    {"id": "Brake","power":20,"chance":60,"minturns":1,"maxturns":2},
+					{"id": "Burn","power":10,"chance":60,"minturns":1,"maxturns":2},
+					{"id": "Taunt","power":10,"chance":50,"minturns":2,"maxturns":4}
+                   				
+					]
+				},
+                {
+					"id":"Defense1","type":2,"level":1,"power": 25,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				
+				   {
+					"id":"Defense2","type":2,"level":5,"power": 35,"mpcost":15,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        {"id": "Courage","power":10,"chance":100,"minturns":1,"maxturns":1}
+                        						
+					]
+				},
+			    {
+					"id":"Defense3","type":2,"level":17,"power": 30,"mpcost":24,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        {"id": "Purify","power":100,"chance":100,"minturns":1,"maxturns":3},
+						{"id": "Hardness","power":10,"chance":100,"minturns":1,"maxturns":1}
+                        						
+					]
+				},
+				{
+					"id":"Defense4","type":2,"level":12,"power": 30,"mpcost":35,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        {"id": "Heal","power":30,"chance":100,"minturns":1,"maxturns":3},
+						{"id": "Hardness","power":20,"chance":100,"minturns":1,"maxturns":1}
+                        						
+					]
+				}			
+            ]
+        },
+		
+		{
+            "id": "Aerofibio",
+			"ratios":{"hp":67,"mp":70,"str":61,"def":52,"ag":91,"mv":12,"xv":65,"creationchance":15,"alienlevelreq":17000000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.8,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":5,"power": 11.2,"mpcost":15,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					{"id": "Blind","power":15,"chance":35,"minturns":2,"maxturns":4}			  
+                     							  
+					]
+				},
+				{
+					"id":"Attack3","type":1,"level":8,"power": 14.5,"mpcost":32,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                   
+				    {"id": "Blind","power":20,"chance":30,"minturns":1,"maxturns":3},
+					{"id": "Weakening","power":20,"chance":50,"minturns":2,"maxturns":4}
+                   				
+					]
+				},
+                {
+					"id":"Defense1","type":2,"level":1,"power": 25,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				
+				   {
+					"id":"Defense2","type":2,"level":5,"power": 35,"mpcost":10,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        {"id": "Courage","power":15,"chance":100,"minturns":1,"maxturns":1}
+                        						
+					]
+				},
+			    {
+					"id":"Defense3","type":2,"level":10,"power": 30,"mpcost":25,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        {"id": "Hardness","power":20,"chance":100,"minturns":1,"maxturns":3},
+						{"id": "Adrenalin","power":20,"chance":100,"minturns":1,"maxturns":1}
+                        						
+					]
+				}				
+            ]
+        },
+		
+		{
+            "id": "Loboan",
+			"ratios":{"hp":95,"mp":49,"str":61,"def":60,"ag":50,"mv":12,"xv":65,"creationchance":15,"alienlevelreq":800000000000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.8,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+					                     						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":3,"power": 10,"mpcost":12,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+				     {"id": "Weakening","power":15,"chance":35,"minturns":2,"maxturns":4}	  
+                     							  
+					]
+				},				
+				{
+					"id":"Attack3","type":1,"level":5,"power": 12.5,"mpcost":21,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+				     {"id": "Blind","power":15,"chance":35,"minturns":1,"maxturns":3} 		  
+                     							  
+					]
+				},
+				{
+					"id":"Attack4","type":1,"level":8,"power": 14.6,"mpcost":35,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                   
+				   {"id": "Paralyze","power":10,"chance":35,"minturns":1,"maxturns":2},
+				   {"id": "Weakening","power":20,"chance":50,"minturns":2,"maxturns":4}
+                   				
+					]
+				},
+                {
+					"id":"Defense1","type":2,"level":1,"power": 35,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":35,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				
+				   {
+					"id":"Defense2","type":2,"level":7,"power": 35,"mpcost":17,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        {"id": "Courage","power":5,"chance":100,"minturns":1,"maxturns":1},
+						{"id": "Hardness","power":5,"chance":100,"minturns":1,"maxturns":1},
+						{"id": "Adrenalin","power":5,"chance":100,"minturns":1,"maxturns":1}
+                        						
+					]
+				},
+			 	{
+					"id":"Defense3","type":2,"level":10,"power": 40,"mpcost":28,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Heal","power":30,"chance":100,"minturns":1,"maxturns":1},
+                        {"id": "HP_regeneration","power":20,"chance":100,"minturns":2,"maxturns":4}						
+					]
+				}				
+            ]
+        },
+		
+			{
+            "id": "Galilean",
+			"ratios":{"hp":95,"mp":67,"str":80,"def":80,"ag":58,"mv":25,"xv":90,"creationchance":8,"alienlevelreq":4000000}, 
+			"hitsoundinfo":{"soundid":"","volume":1},
+			"skills":
+            [
+                {
+					"id":"Attack1","type":1,"level":1,"power": 7.5,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[                    						 
+					]
+				},
+				{
+					"id":"Attack2","type":1,"level":10,"power": 10.2,"mpcost":17,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					
+				     {"id": "Brake","power":15,"chance":15,"minturns":2,"maxturns":4}	  
+                     							  
+					]
+				},
+				{
+					"id":"Attack3","type":1,"level":17,"power": 12.3,"mpcost":25,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                   {"id": "Blind","power":20,"chance":25,"minturns":2,"maxturns":4}
+                   				
+					]
+				},
+				{
+					"id":"Attack4","type":1,"level":20,"power": 14,"mpcost":40,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                   
+				   {"id": "Trapped","power":10,"chance":50,"minturns":1,"maxturns":2},
+				   {"id": "Weakening","power":15,"chance":25,"minturns":2,"maxturns":4},
+				   {"id": "Blind","power":15,"chance":25,"minturns":2,"maxturns":4},
+				   {"id": "Brake","power":15,"chance":25,"minturns":2,"maxturns":4}
+                   				
+					]
+				},
+                {
+					"id":"Defense1","type":2,"level":1,"power": 35,"mpcost":0,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+						{"id": "Recharge","power":40,"chance":100,"minturns":1,"maxturns":1}
+					]
+				},
+				
+				   {
+					"id":"Defense2","type":2,"level":10,"power": 35,"mpcost":19,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        
+						{"id": "Hardness","power":15,"chance":100,"minturns":1,"maxturns":1},
+						{"id": "Heal","power":15,"chance":100,"minturns":1,"maxturns":1}
+                        						
+					]
+				},		   
+			    {
+					"id":"Defense3","type":2,"level":18,"power": 40,"mpcost":35,					
+					"soundinfo":[{"soundid":"","volume":1}],
+					"effects":
+					[
+					 
+                        {"id": "Heal","power":25,"chance":100,"minturns":1,"maxturns":3},
+						{"id": "Courage","power":18,"chance":100,"minturns":1,"maxturns":1}
+                        						
+					]
+				}               					
+            ]
+        }
+    ],
+	"items":
+    [
+	    {
+            "id": "Heal_1",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Heal","power":20}
+			]		
+        },
+		
+		{
+            "id": "Heal_2",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Heal","power":30}
+			]		
+        },
+		
+		{
+            "id": "Heal_3",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Heal","power":50}
+			]		
+        },
+		
+		{
+            "id": "Courage_1",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Courage","power":5}
+			]		
+        },
+		
+		{
+            "id": "Courage_2",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Courage","power":10}
+			]		
+        },
+		
+		{
+            "id": "Courage_3",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Courage","power":25}
+			]		
+        },
+		{
+            "id": "Hardness_1",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Hardness","power":5}
+			]		
+        },
+		
+		{
+            "id": "Hardness_2",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Hardness","power":10}
+			]		
+        },
+		
+		{
+            "id": "Hardness_3",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Hardness","power":25}
+			]		
+        },
+		{
+            "id": "Adrenalin_1",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Adrenalin","power":5}
+			]		
+        },
+		
+		{
+            "id": "Adrenalin_2",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Adrenalin","power":10}
+			]		
+        },
+		
+		{
+            "id": "Adrenalin_3",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Adrenalin","power":25}
+			]		
+        },
+		
+		{
+            "id": "Recharge_1",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Recharge","power":25}
+			]		
+        },
+		
+		{
+            "id": "Recharge_2",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Recharge","power":60}
+			]		
+        },
+		
+		{
+            "id": "Recharge_3",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Recharge","power":100}
+			]		
+        },
+		
+		{
+            "id": "Purify",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Purify","power":0}
+			]		
+        },
+		
+		
+		{
+            "id": "Elixir",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Heal","power":100},												
+				{"id": "Recharge","power":100}												
+			]		
+        },
+		{
+            "id": "Invulnerability",
+			"targeteable":false,
+			"effects":
+			[
+				{"id": "Invulnerability","power":100}											
+			]		
+        },
+		{
+            "id": "Bonusxp",
+			"targeteable":false,
+			"effects":
+			[
+				{"id": "Bonusxp","power":50}											
+			]		
+        },
+		{
+            "id": "Bonusgold",
+			"targeteable":false,
+			"effects":
+			[
+				{"id": "Bonusgold","power":50}												
+			]		
+        },
+		{
+            "id": "Switch",
+			"targeteable":true		
+        },
+		{
+            "id": "SwitchE",
+			"targeteable":false					
+        },
+		{
+            "id": "Revive",
+			"targeteable":true,
+			"effects":
+			[
+				{"id": "Revive","power":50}											
+			]		
+        },
+		{
+            "id": "Doubleaction",
+			"targeteable":false,
+			"effects":
+			[
+				{"id": "Doubleaction","power":0}											
+			]		
+        }
+    ],	
+	"ai_alien_stats_reduction":
+	[
+		{
+			"rangeMinLevel": 1,
+			"rangeMaxLevel": 1,
+			"statsMax":{"str":0.5,"def":1,"agl":0.6}
+		},
+		{
+			"rangeMinLevel": 2,
+			"rangeMaxLevel": 5,
+			"statsMax":{"str":0.8,"def":0.9,"agl":1}
+		},
+		
+		{
+			"rangeMinLevel": 6,
+			"rangeMaxLevel": 7,
+			"statsMax":{"str":0.85,"def":0.9,"agl":1}	
+		},
+		{
+			"rangeMinLevel": 8,
+			"rangeMaxLevel": 100,
+			"statsMax":{"str":1,"def":1,"agl":1}	
+		}
+	],
+	"tournaments":
+	[
+		{
+			"id":"Tournament1",
+			
+			"card": "Card1",
+			
+			"gold_req":0,
+			"level_req":1,
+			"alien_req":"none",
+			
+			"reward_gold":100,
+			"reward_xp":30,
+			"reward_item":"none",			
+			"reward_alien":"Gourmand",			
+			
+			"min_team_aliens":1,
+			"max_team_aliens":1,	
+			
+			"fightsInfos":
+			[
+				{
+					"background":"background1",
+					"aliens":[{"alienID":"Random","alienLevel":1,"trainedstr":0,"traineddef":0,"trainedag":0}],
+					"items":[]
+				},
+				{
+					"background":"background1",
+					"aliens":[{"alienID":"Gourmand","alienLevel":2,"trainedstr":0,"traineddef":0,"trainedag":0}],
+					"items":[]
+				}				
+			]			
+		},
+		
+		{
+			"id":"Tournament2",
+			
+			"card": "Card2",
+			
+			"gold_req":50,
+			"level_req":3,
+			"alien_req":"none",
+			
+			"reward_gold":150,
+			"reward_xp":60,
+			"reward_item":"Heal_2",
+			"reward_alien":"none",			
+			
+			"min_team_aliens":1,
+			"max_team_aliens":2,	
+			
+			"fightsInfos":
+			[
+				{
+					"background":"background1",
+					"aliens":[{"alienID":"Random","alienLevel":3,"trainedstr":0,"traineddef":0,"trainedag":0},{"alienID":"Random","alienLevel":3,"trainedstr":0,"traineddef":0,"trainedag":0}],
+					"items":[]
+				},
+				{
+					"background":"background1",
+					"aliens":[{"alienID":"Random","alienLevel":4,"trainedstr":0,"traineddef":0,"trainedag":0},{"alienID":"Aracnochimpance","alienLevel":5,"trainedstr":0,"traineddef":0,"trainedag":0}],
+					"items":[]
+				}
+				
+			]			
+		},
+		
+		{
+			"id":"Tournament3",
+			
+			"card": "Card3",
+			
+			"gold_req":0,
+			"level_req":5,
+			"alien_req":"Aracnochimpance",
+			
+			"reward_gold":250,
+			"reward_xp":100,
+			"reward_item":"Switch",
+			"reward_alien":"none",			
+			
+			"min_team_aliens":1,
+			"max_team_aliens":3,	
+			
+			"fightsInfos":
+			[
+				{
+					"background":"background3",
+					"aliens":[{"alienID":"Random","alienLevel":5,"trainedstr":0.1,"traineddef":0.1,"trainedag":0.1},{"alienID":"Random","alienLevel":5,"trainedstr":0.1,"traineddef":0.1,"trainedag":0.1}],
+					"items":[]
+				},
+				{
+					"background":"background3",                                                                               
+					"aliens":[{"alienID":"Random","alienLevel":5,"trainedstr":0.1,"traineddef":0.1,"trainedag":0.1},{"alienID":"Random","alienLevel":6,"trainedstr":0.1,"traineddef":0.1,"trainedag":0.1},{"alienID":"Transylian","alienLevel":7,"trainedstr":0,"traineddef":0,"trainedag":0}],
+					"items":[]
+				}
+				
+			]			
+		},
+		
+	    {
+			"id":"Tournament4",
+			
+			"card": "Card4",
+			
+			"gold_req":250,
+			"level_req":7,
+			"alien_req":"none",
+			
+			"reward_gold":500,
+			"reward_xp":140,
+			"reward_item":"Elixir",			
+			"reward_alien":"none",			
+			
+			"min_team_aliens":1,
+			"max_team_aliens":3,	
+			
+			"fightsInfos":
+			[
+				{
+					"background":"background3",
+					"aliens":[{"alienID":"Random","alienLevel":7,"trainedstr":0.15,"traineddef":0.15,"trainedag":0.15},{"alienID":"Random","alienLevel":7,"trainedstr":0.15,"traineddef":0.15,"trainedag":0.15},{"alienID":"Random","alienLevel":7,"trainedstr":0.15,"traineddef":0.15,"trainedag":0.15}],
+					"items":[]
+				},
+				{
+					"background":"background3",
+					"aliens":[{"alienID":"Transylian","alienLevel":7,"trainedstr":0.2,"traineddef":0.2,"trainedag":0.2},{"alienID":"Random","alienLevel":8,"trainedstr":0,"traineddef":0,"trainedag":0},{"alienID":"Random","alienLevel":8,"trainedstr":0.15,"traineddef":0.15,"trainedag":0.15}],
+					"items":[]
+				},
+				{
+					"background":"background3",
+					"aliens":[{"alienID":"Random","alienLevel":9,"trainedstr":0.25,"traineddef":0.3,"trainedag":0.25},{"alienID":"Random","alienLevel":9,"trainedstr":0.3,"traineddef":0.25,"trainedag":0.3},{"alienID":"Pyronite","alienLevel":10,"trainedstr":0.3,"traineddef":0.5,"trainedag":0.7}],
+					"items":[]
+				}
+			]			
+		},
+	    
+    {
+			"id":"Tournament5",
+			
+			"card": "Card5",
+			
+			"gold_req":350,
+			"level_req":10,
+			"alien_req":"Pyronite",
+			
+			"reward_gold":700,
+			"reward_xp":800,
+			"reward_item":"none",			
+			"reward_alien":"Necrofriggiano",			
+			
+			"min_team_aliens":1,
+			"max_team_aliens":3,	
+			
+			"fightsInfos":
+			[
+				{
+					"background":"background2",
+					"aliens":[{"alienID":"Random","alienLevel":9,"trainedstr":0.25,"traineddef":0.3,"trainedag":0.25},{"alienID":"Random","alienLevel":10,"trainedstr":0.25,"traineddef":0.25,"trainedag":0.25},{"alienID":"Random","alienLevel":10,"trainedstr":0.25,"traineddef":0.25,"trainedag":0.25}],
+					"items":[]
+				},
+				{
+					"background":"background2",
+					"aliens":[{"alienID":"Random","alienLevel":10,"trainedstr":0.35,"traineddef":0.35,"trainedag":0.35},{"alienID":"Random","alienLevel":11,"trainedstr":0.35,"traineddef":0.35,"trainedag":0.35},{"alienID":"Random","alienLevel":11,"trainedstr":0.35,"traineddef":0.35,"trainedag":0.35}],
+					"items":[]
+				},
+				{
+					"background":"background2",
+					"aliens":[{"alienID":"Random","alienLevel":12,"trainedstr":0.4,"traineddef":0.4,"trainedag":0.35},{"alienID":"Random","alienLevel":12,"trainedstr":0.4,"traineddef":0.4,"trainedag":0.4},{"alienID":"Necrofriggiano","alienLevel":13,"trainedstr":0.6,"traineddef":0.6,"trainedag":0.6}],
+					"items":[]
+				}
+			]			
+		},		
+		
+		{
+			"id":"Tournament6",
+			
+			"card": "Card6",
+			
+			"gold_req":700,
+			"level_req":13,
+			"alien_req":"none",
+			
+			"reward_gold":1400,
+			"reward_xp":1000,
+			"reward_item":"Elixir",			
+			"reward_alien":"Tetramand",			
+			
+			"min_team_aliens":1,
+			"max_team_aliens":3,	
+			
+			"fightsInfos":
+			[
+				{
+					"background":"background2",
+					"aliens":[{"alienID":"Random","alienLevel":13,"trainedstr":0.5,"traineddef":0.5,"trainedag":0.5},{"alienID":"Random","alienLevel":13,"trainedstr":0.5,"traineddef":0.5,"trainedag":0.35},{"alienID":"Random","alienLevel":14,"trainedstr":0.5,"traineddef":0.5,"trainedag":0.5}],
+					"items":[]
+				},
+				
+				
+				
+				{
+					"background":"background2",
+					"aliens":[{"alienID":"Random","alienLevel":14,"trainedstr":0.5,"traineddef":0.5,"trainedag":0.5},{"alienID":"Random","alienLevel":14,"trainedstr":0.5,"traineddef":0.5,"trainedag":0.5},{"alienID":"Random","alienLevel":15,"trainedstr":0.5,"traineddef":0.6,"trainedag":0.5}],
+					"items":[]
+				},
+				{
+					"background":"background2",
+					"aliens":[{"alienID":"Random","alienLevel":15,"trainedstr":0.6,"traineddef":0.6,"trainedag":0.6},{"alienID":"Random","alienLevel":15,"trainedstr":0.5,"traineddef":0.6,"trainedag":0.5},{"alienID":"Tetramand","alienLevel":16,"trainedstr":0.7,"traineddef":0.7,"trainedag":0.7}],
+					"items":[]
+				}
+			]			
+		},
+		
+			{
+			"id":"Tournament7",
+			
+			"card": "Card7",
+			
+			"gold_req":900,
+			"level_req":16,
+			"alien_req":"Tetramand",
+			
+			"reward_gold":2000,
+			"reward_xp":1500,
+			"reward_item":"Revive",			
+			"reward_alien":"Conductoid",			
+			
+			"min_team_aliens":1,
+			"max_team_aliens":4,	
+			
+			"fightsInfos":
+			[
+				{
+					"background":"background1",
+					"aliens":[{"alienID":"Random","alienLevel":16,"trainedstr":0.65,"traineddef":0.65,"trainedag":0.65},{"alienID":"Random","alienLevel":16,"trainedstr":0.65,"traineddef":0.65,"trainedag":0.65},{"alienID":"Random","alienLevel":16,"trainedstr":0.65,"traineddef":0.65,"trainedag":0.65}],
+					"items":[]
+				},
+				{
+					"background":"background1",
+					"aliens":[{"alienID":"Random","alienLevel":17,"trainedstr":0.7,"traineddef":0.7,"trainedag":0.7},{"alienID":"Random","alienLevel":17,"trainedstr":0.7,"traineddef":0.7,"trainedag":0.7},{"alienID":"Random","alienLevel":17,"trainedstr":0.7,"traineddef":0.7,"trainedag":0.7}],
+					"items":[]
+				},
+				{
+					"background":"background1",
+					"aliens":[{"alienID":"Random","alienLevel":17,"trainedstr":0.8,"traineddef":0.8,"trainedag":0.8},{"alienID":"Random","alienLevel":17,"trainedstr":0.8,"traineddef":0.8,"trainedag":0.8},{"alienID":"Random","alienLevel":18,"trainedstr":0.8,"traineddef":0.8,"trainedag":0.8}],
+					"items":[]
+				},
+				{
+					"background":"background1",                                                                                                                          
+					"aliens":[{"alienID":"Random","alienLevel":18,"trainedstr":0.8,"traineddef":0.8,"trainedag":0.8},{"alienID":"Random","alienLevel":18,"trainedstr":0.8,"traineddef":0.8,"trainedag":0.8},{"alienID":"Random","alienLevel":18,"trainedstr":0.8,"traineddef":0.8,"trainedag":0.8},{"alienID":"Conductoid","alienLevel":19,"trainedstr":0.85,"traineddef":0.85,"trainedag":0.85}],
+					"items":[]
+				}
+			]			
+		},
+		
+		
+			{
+			"id":"Tournament8",
+			
+			"card": "Card8",
+			
+			"gold_req":1500,
+			"level_req":20,
+			"alien_req":"Conductoid",
+			
+			"reward_gold":5000,
+			"reward_xp":4000,
+			"reward_item":"none",
+			"reward_alien":"none",			
+			
+			"min_team_aliens":1,
+			"max_team_aliens":4,	
+			
+			"fightsInfos":
+			[
+				{
+					"background":"background2",
+					"aliens":[{"alienID":"Random","alienLevel":19,"trainedstr":0.8,"traineddef":0.8,"trainedag":0.8},{"alienID":"Random","alienLevel":19,"trainedstr":0.8,"traineddef":0.8,"trainedag":0.8},{"alienID":"Random","alienLevel":19,"trainedstr":0.8,"traineddef":0.8,"trainedag":0.8}],
+					"items":[]
+				},
+				{
+					"background":"background2",
+					"aliens":[{"alienID":"Random","alienLevel":19,"trainedstr":0.8,"traineddef":0.8,"trainedag":0.8},{"alienID":"Random","alienLevel":20,"trainedstr":0.8,"traineddef":0.8,"trainedag":0.8},{"alienID":"Random","alienLevel":20,"trainedstr":0.8,"traineddef":0.8,"trainedag":0.8},{"alienID":"Random","alienLevel":20,"trainedstr":0.8,"traineddef":0.8,"trainedag":0.8}],
+					"items":[]
+				},
+				{
+					"background":"background2",
+					"aliens":[{"alienID":"Random","alienLevel":20,"trainedstr":0.8,"traineddef":0.8,"trainedag":0.8},{"alienID":"Random","alienLevel":21,"trainedstr":0.8,"traineddef":0.85,"trainedag":0.85},{"alienID":"Random","alienLevel":21,"trainedstr":0.85,"traineddef":0.85,"trainedag":0.85},{"alienID":"Random","alienLevel":21,"trainedstr":0.85,"traineddef":0.85,"trainedag":0.85}],
+					"items":[]
+				},
+				{
+					"background":"background2",
+					"aliens":[{"alienID":"Random","alienLevel":21,"trainedstr":0.9,"traineddef":0.9,"trainedag":0.9},{"alienID":"Random","alienLevel":22,"trainedstr":0.9,"traineddef":0.9,"trainedag":0.9},{"alienID":"Random","alienLevel":23,"trainedstr":1,"traineddef":1,"trainedag":1},{"alienID":"Vaxasauriano","alienLevel":25,"trainedstr":1.1,"traineddef":1.1,"trainedag":1.1}],
+					"items":[]
+				}
+			]			
+		}
+		
+	],
+	"shop":
+	{
+		"inventoryorder":
+		[
+			"Heal_1",
+			"Heal_2",
+			"Heal_3",
+			"Courage_1",
+			"Courage_2",
+			"Courage_3",
+			"Hardness_1",
+			"Hardness_2",
+			"Hardness_3",
+			"Adrenalin_1",
+			"Adrenalin_2",
+			"Adrenalin_3",
+			"Recharge_1",
+			"Recharge_2",
+			"Recharge_3",
+			"Purify",
+			"Elixir",			
+			"Switch",			
+			"Revive"			
+		],		
+		"options":
+		[
+			{"type":"item", "id": "Heal_1","price":40,"lvl":1},			
+			{"type":"item", "id": "Heal_2","price":70,"lvl":6},			
+			{"type":"item", "id": "Heal_3","price":130,"lvl":10},			
+			{"type":"item", "id": "Courage_1","price":50,"lvl":1},			
+			{"type":"item", "id": "Courage_2","price":90,"lvl":6},	
+			{"type":"item", "id": "Courage_3","price":180,"lvl":10},
+			{"type":"item", "id": "Hardness_1","price":50,"lvl":1},
+			{"type":"item", "id": "Hardness_2","price":90,"lvl":6},
+			{"type":"item", "id": "Hardness_3","price":180,"lvl":10},
+			{"type":"item", "id": "Adrenalin_1","price":50,"lvl":1},
+			{"type":"item", "id": "Adrenalin_2","price":90,"lvl":6},
+			{"type":"item", "id": "Adrenalin_3","price":180,"lvl":10},
+			{"type":"item", "id": "Recharge_1","price":40,"lvl":1},			
+			{"type":"item", "id": "Recharge_2","price":70,"lvl":6},
+			{"type":"item", "id": "Recharge_3","price":140,"lvl":10},
+			{"type":"item", "id": "Purify","price":50,"lvl":4},
+			{"type":"item", "id": "Elixir","price":300,"lvl":10},			
+			{"type":"item", "id": "Switch","price":200,"lvl":8},			
+			{"type":"item", "id": "Revive","price":500,"lvl":12},
+			
+			
+			{"type":"alien", "id":"Insectoid","price":200,"lvl":1},
+			{"type":"alien", "id":"Nosedeenian","price":200,"lvl":1},
+			{"type":"alien", "id":"Splixson","price":200,"lvl":1},
+            {"type":"alien", "id":"Aracnochimpance","price":300,"lvl":5},
+         
+            {"type":"alien", "id":"Pyronite","price":900,"lvl":10},			
+		    {"type":"alien", "id":"Vaxasauriano","price":5000,"lvl":22}		
+		]
+	},
+	"playeraliensoffset":
+	[
+		{"alien":"Pyronite","alienxp":583,"trainedstr":0,"traineddef":0,"trainedag":0},
+	    {"alien":"Aracnochimpance","alienxp":51,"trainedstr":0,"traineddef":0,"trainedag":0},
+		{"alien":"Insectoid","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+		{"alien":"Nosedeenian","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+		{"alien":"Splixson","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+		{"alien":"Transylian","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},	
+		
+		{"alien":"Necrofriggiano","alienxp":1757,"trainedstr":0,"traineddef":0,"trainedag":0},
+		{"alien":"Tetramand","alienxp":2195,"trainedstr":0,"traineddef":0,"trainedag":0},
+		{"alien":"Conductoid","alienxp":3930,"trainedstr":0,"traineddef":0,"trainedag":0},
+		{"alien":"Vaxasauriano","alienxp":4665,"trainedstr":0,"traineddef":0,"trainedag":0},
+
+
+
+		
+			
+		{"alien":"PelarotaAlburiano","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},	
+		{"alien":"GeocheloneAerio","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+		{"alien":"Gourmand","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+		{"alien":"Ectonurite","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+		
+		{"alien":"Talpaedan","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+			
+		
+	
+		{"alien":"Appoplexian","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+		{"alien":"Kinceleran","alienxp":51,"trainedstr":0,"traineddef":0,"trainedag":0},
+		{"alien":"Gimlinopithecus","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+			
+		{"alien":"Segmentasapien","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+		{"alien":"Terradino","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+	
+		
+		{"alien":"Methanosian","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+			
+		{"alien":"Orishan","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+		{"alien":"ThepKhufan","alienxp":70,"trainedstr":0,"traineddef":0,"trainedag":0},
+		
+		{"alien":"Aerofibio","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+		{"alien":"Loboan","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0},
+			
+		{"alien":"Galilean","alienxp":0,"trainedstr":0,"traineddef":0,"trainedag":0}
+	],
+	"availablealienslist":"Insectoid,Nosedeenian,Gourmand,Pyronite,Splixson,Aracnochimpance,Tetramand,Conductoid,Vaxasauriano,Necrofriggiano,Transylian"
+}

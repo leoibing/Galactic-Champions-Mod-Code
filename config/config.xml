@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<!--  TESTING  -->
+	<!--  =======  -->
+	<term key="loadconfigdebug">false</term>
+
+	<term key="testing_fight">false</term>	<!-- Aliens chosen by player are set by json, and so are his enemies -->
+
+	<term key="tutorial_active">true</term>
+
+	<term key="load_player_info_from_so">true</term>
+	<term key="load_player_inventory_from_so">true</term> <!-- Si se quiere probar items especificos , no levanto informacion de los aliens desde el SO -->
+	<term key="load_player_aliens_from_so">true</term> <!-- Si se quiere probar aliens especificos , no levanto informacion de los aliens desde el SO -->
+
+	<!--  GENERAL  -->
+	<term key="shared_object_name">galacticchampions</term>	
+	<term key="language">por</term>
+	<term key="online">false</term>
+	<term key="game_width">850</term>
+	<term key="game_height">550</term>
+	<term key="load_level_assets">true</term>
+	<term key="show_hud">true</term>
+	<term key="skip_menu_intro">false</term>
+
+	<!--  BADGES  -->
+	<term key="test_badges">false</term>
+	<term key="use_badges">false</term>
+	<term key="badges_game_name">Ben10GalacticChampions</term>
+	<term key="badge_name_win_first_tournament">PrimerPaso</term>
+	<term key="badge_name_train_10_stat_points_of_an_alien">Entrenador</term>
+	<term key="badge_name_buy_all_shop_items">EquipoCompleto</term>
+	<term key="badge_name_defeat_1_vs_3">Maestro</term>
+	<term key="badge_name_collect_all_aliens">Coleccionista</term>
+	<term key="badge_name_win_all_tournaments">CampeonSupremo</term>
+
+	<!--  CODES  -->
+	<term key="use_codes">true</term>
+
+	<!--  TRACKING  -->
+	<term key="use_tracking">false</term>
+	<term key="track_gameName">game:Ben10GalacticChampions</term>
+	<!--  CODES  -->
+	<term key="track_code_function">trackGameMilestones</term>
+	<term key="track_code_source">codigos</term>
+
+	<!--  DEBUG  -->
+	<term key="debug">false</term>
+	<term key="debug_attack_area">false</term>
+
+	<!--  SWFs  -->
+	<term key="external_swf_wght_pct">90</term>
+	<!--  TO LOAD PER LEVEL  -->
+	<term key="swfs_to_load_level_1"></term>
+	<!--  SIZES  -->
+	<term key="size_fx.swf">20000</term>
+	<term key="size_level1.swf">12558</term>
+	<term key="size_player.swf">150194</term>
+	<term key="size_scenery.swf">1750235</term>
+	<term key="size_sounds.swf">344839</term>
+	<term key="size_widgets.swf">2241599</term>
+
+	<!--  SFXs Y MUSICAS GLOBALES  -->
+	<term key="global_sfx_ids">CodeCorrect,CodeError,AlienExit,Rewardfadein,TeamSelectionDeleteSnd,RollOverAtkDefItemBtnSnd,RollOverCardSnd,ShopBuyItemSnd,TutorialBenVoice1,TutorialBenVoice2,TutorialBenVoice3,TutorialBenVoice4,RollOverWatchSnd,IntroSplash,SkillAnnouncement,AttackHitDefense,AlienDefeated,AttackHit,ClickSnd,AttackMissed,AlienEntrance,VersusScreen,RollOverSnd,MapRewardLandedSnd,MapFadeInSnd,MapPopUpCloseSnd,MapRewardFlySnd,MapOpenTournamentSnd,MapRollOverCardsSnd,MapRollOverAreaSnd,TrainingStatSnd,MapOpenFightSnd,MapOpenShopSnd,MapOpenTrainingSnd,UpDownBtnSnd,AlienSelected,AlienRollOver,ScrollDownBtnSnd,ScrollUpBtnSnd,TransitionFadeIn,TransitionFadeOut,AlienMarkerSnd,ActionButtonsIn,MenuFadeIn,BarDownSnd,BarUpSnd,OmnitrixStartUp,RollOverOmnitrix,ClickOmnitrix,TutorialBenIn,TutorialBenOut,FirstAlienFadeInSnd,TutorialArrowSnd,TutorialTextIn,FirstAlienConfirmationFadeInSnd,WatchSelectedSnd,FxPositiveNegativeOut,FxOnAlienSnd,BurnFxOnAlienSnd,PoisonFxOnAlienSnd</term>
+	<term key="global_music_ids">MusicSilence,MusicBattle,MusicMap,MusicTournament,MusicTournamentFinal,MusicScreens,MusicSplash,MusicFixture,VersusScreenLoop,GameOverFx</term>
+
+	<!--  VOLUMENES  -->
+	<term key="master_volume">1</term>
+
+	<!-- MUSIC -->
+	<term key="Volume_MusicBattle">0.35</term>
+	<term key="Volume_MusicMap">0.7</term>
+	<term key="Volume_MusicTournament">0.35</term>
+	<term key="Volume_MusicTournamentFinal">0.35</term>
+	<term key="Volume_MusicScreens">0.7</term>
+	<term key="Volume_MusicSplash">1</term>
+	<term key="Volume_MusicFixture">1</term>
+
+	<!-- SPLASH -->
+	<term key="Volume_IntroSplash">1</term>
+	<term key="Volume_CodeError">1</term>
+	<term key="Volume_CodeCorrect">1</term>
+
+	<!-- TUTORIAL -->
+	<term key="Volume_TutorialBenIn">1</term>
+	<term key="Volume_TutorialBenOut">1</term>
+	<term key="Volume_FirstAlienFadeInSnd">1</term>
+	<term key="Volume_TutorialArrowSnd">1</term>
+	<term key="Volume_TutorialTextIn">1</term>
+	<term key="Volume_FirstAlienConfirmationFadeInSnd">1</term>
+	
+	<term key="Volume_TutorialBenVoice1">1</term>
+	<term key="Volume_TutorialBenVoice2">1</term>
+	<term key="Volume_TutorialBenVoice3">1</term>
+	<term key="Volume_TutorialBenVoice4">1</term>
+
+	<!-- GENERAL -->
+	<term key="Volume_ClickSnd">1</term>
+	<term key="Volume_RollOverSnd">0.6</term>
+	<term key="Volume_TransitionFadeIn">1</term> 
+	<term key="Volume_TransitionFadeOut">1</term>	
+
+	<!-- BATTLE -->
+	<term key="Volume_SkillAnnouncement">0.5</term>
+	<term key="Volume_AttackHitDefense">1</term> <!-- TBD -->
+	<term key="Volume_AlienDefeated">0.8</term> <!-- TBD -->
+	<term key="Volume_AttackHit">1</term> <!-- TBD -->
+	<term key="Volume_AttackMissed">0.7</term> <!-- TBD -->
+	<term key="Volume_AlienEntrance">0.8</term>	
+	<term key="Volume_AlienMarkerSnd">0.8</term>
+	<term key="Volume_BarDownSnd">0.4</term>
+	<term key="Volume_BarUpSnd">0.8</term>	
+
+	<term key="Volume_FxOnAlienSnd">1</term>
+	<term key="Volume_BurnFxOnAlienSnd">1</term>
+	<term key="Volume_PoisonFxOnAlienSnd">1</term>
+	<term key="Volume_AlienExit">1</term>
+
+	<!-- BATTLE HUD -->
+	<term key="Volume_ActionButtonsIn">0.8</term>
+	<term key="Volume_MenuFadeIn">0.8</term>		
+
+	<term key="Volume_FxPositiveNegativeOut">0.4</term>	
+	<term key="Volume_RollOverAtkDefItemBtnSnd">1.4</term>	
+
+	<!-- WATCH SELECTION -->
+	<term key="Volume_WatchSelectedSnd">0.7</term>
+	<term key="Volume_RollOverWatchSnd">0.5</term>
+
+	<!-- MAP -->
+	<term key="Volume_MapRewardLandedSnd">0.7</term>
+	<term key="Volume_MapFadeInSnd">1</term> 
+	<term key="Volume_MapPopUpCloseSnd">0.8</term> 
+	<term key="Volume_MapRewardFlySnd">0.7</term> 
+	<term key="Volume_MapOpenTournamentSnd">1</term>
+	<term key="Volume_MapOpenFightSnd">0.8</term>
+	<term key="Volume_MapOpenShopSnd">0.8</term> 
+	<term key="Volume_MapOpenTrainingSnd">0.8</term>
+	<term key="Volume_MapRollOverCardsSnd">1</term>
+	<term key="Volume_MapRollOverAreaSnd">0.8</term> 
+
+	<term key="Volume_OmnitrixStartUp">0.6</term>
+	<term key="Volume_RollOverOmnitrix">0.6</term>
+	<term key="Volume_ClickOmnitrix">0</term>
+
+	<term key="Volume_Rewardfadein">1</term>
+
+	<!-- TRAINING -->
+	<term key="Volume_TrainingStatSnd">0.8</term>
+
+	<!-- ALIEN SELECTION-->
+	<term key="Volume_AlienSelected">0.6</term>
+	<term key="Volume_AlienRollOver">1</term>
+
+	<!-- BUY SCREEN -->
+	<term key="Volume_UpDownBtnSnd">1</term>
+
+	<!-- SHOP SCREEN -->
+	<term key="Volume_ShopBuyItemSnd">1</term>	
+
+	<!-- VS -->
+	<term key="Volume_VersusScreen">1</term>
+	<term key="Volume_VersusScreenLoop">1</term>
+
+	<!-- ITEMS MENU -->
+	<term key="Volume_ScrollDownBtnSnd">1</term>
+	<term key="Volume_ScrollUpBtnSnd">1</term>	
+
+	<!-- CARDS SCREEN -->
+	<term key="Volume_RollOverCardSnd">1</term>
+
+	<!-- GAME LOST SCREEN -->
+	<term key="Volume_GameOverFx">1</term>	
+	
+	<!-- TEAM SELECTION SCREEN -->
+	<term key="Volume_TeamSelectionDeleteSnd">1</term>		
+
+	<!--  CONTROLS  -->
+	<term key="simultaneous_keys_frames_tolerance">10</term>
+
+	<!--  Aliens Menu Order  -->
+	<term key="AlienMenuOption1">PelarotaAlburiano</term>
+	<term key="AlienMenuOption2">Methanosian</term>
+	<term key="AlienMenuOption3">Kinceleran</term>
+	<term key="AlienMenuOption4">Vaxasauriano</term>
+	<term key="AlienMenuOption5">Necrofriggiano</term>
+	<term key="AlienMenuOption6">Insectoid</term>
+	<term key="AlienMenuOption7">Nosedeenian</term>
+	<term key="AlienMenuOption8">Splixson</term>
+	<term key="AlienMenuOption9">Pyronite</term>
+	<term key="AlienMenuOption10">GeocheloneAerio</term>
+	<term key="AlienMenuOption11">Loboan</term>
+	<term key="AlienMenuOption12">Terradino</term>
+	<term key="AlienMenuOption13">Ectonurite</term>
+	<term key="AlienMenuOption14">ThepKhufan</term>
+	<term key="AlienMenuOption15">Gimlinopithecus</term>
+	<term key="AlienMenuOption16">Aerofibio</term>
+	<term key="AlienMenuOption17">Segmentasapien</term>
+	<term key="AlienMenuOption18">Conductoid</term>
+	<term key="AlienMenuOption19">Transylian</term>
+	<term key="AlienMenuOption20">Gourmand</term>
+	<term key="AlienMenuOption21">Aracnochimpance</term>
+	<term key="AlienMenuOption22">Tetramand</term>
+	<term key="AlienMenuOption23">Galilean</term>
+	<term key="AlienMenuOption24">Talpaedan</term>
+	<term key="AlienMenuOption25">Orishan</term>
+	<term key="AlienMenuOption26">Appoplexian</term>
+
+	<!-- SHOP  -->
+	<term key="ItemInfoOffsetX">-2</term>
+	<term key="ItemInfoOffsetY">-4</term>	
+
+	<!-- BattleHud -->
+	<term key="StatsDeltaX">210</term>
+	<term key="SwapsDeltaX">160</term>
+
+	<!-- Tutorial Ben Voices -->
+	<!-- Options: TutorialBenVoice1 , TutorialBenVoice2 , TutorialBenVoice3 , TutorialBenVoice4 -->
+	<term key="TutorialIntroBenVoice">TutorialBenVoice1</term>
+	<term key="TutorialAlienSelectionIntroBenVoice">TutorialBenVoice2</term>
+	<term key="TutorialQuickFightIntroBenVoice">TutorialBenVoice3</term>
+	<term key="TutorialTrainingIntroBenVoice">TutorialBenVoice4</term>
+	<term key="TutorialTournamentIntroBenVoice">TutorialBenVoice5</term>
+	<term key="TutorialCongratulationsBenVoice">TutorialBenVoice6</term>
+
+</config>
